@@ -1,0 +1,7 @@
+/.metadata/
+
+# lib folder containing OS-specific LWJGL 2 and Slick-Utils files
+lib/
+
+# macOS file icons, etc.
+.DS_Store
