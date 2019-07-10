@@ -1,3 +1,5 @@
+// Opens an empty window to validate that the project is setup correctly
+
 package engineTester;
 
 import org.lwjgl.opengl.Display;
