@@ -1,6 +1,6 @@
 // Represents 3D models stored in memory
 
-package renderEngine;
+package models;
 
 public class RawModel {
 	
