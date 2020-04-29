@@ -2,6 +2,9 @@
 
 package engineTester;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.lwjgl.opengl.Display;
 import org.lwjgl.util.vector.Vector3f;
 
@@ -12,6 +15,7 @@ import models.RawModel;
 import models.TexturedModel;
 import renderEngine.DisplayManager;
 import renderEngine.Loader;
+import renderEngine.MasterRenderer;
 import renderEngine.OBJLoader;
 import renderEngine.Renderer;
 import shaders.StaticShader;
@@ -23,8 +27,6 @@ public class MainGameLoop {
 
 		DisplayManager.createDisplay();
 		Loader loader = new Loader();
-		StaticShader shader = new StaticShader();
-		Renderer renderer = new Renderer(shader);
 
 		// RawModel model = OBJLoader.loadObjModel("runescapeCharacter", loader);
 		RawModel model = OBJLoader.loadObjModel("person", loader);
@@ -39,24 +41,30 @@ public class MainGameLoop {
 		// Light light = new Light(new Vector3f(0,0,-20),new Vector3f(1,1,1));
 
 		Entity entity = new Entity(staticModel, new Vector3f(0, -5, -25), 0, 0, 0, 1);
+		List<Entity> entities = new ArrayList<>();
+		entities.add(entity);
+		
+		
 		Light light = new Light(new Vector3f(0, 0, -20), new Vector3f(1, 1, 1));
 
 		Camera camera = new Camera();
 
+		MasterRenderer renderer = new MasterRenderer();
+		
 		// persist display until user exit
 		while (!Display.isCloseRequested()) {
-			entity.increaseRotation(0, 1, 0);
 			camera.move();
-			renderer.prepare();
-			shader.start();
-			shader.loadLight(light);
-			shader.loadViewMatrix(camera);
-			renderer.render(entity, shader);
-			shader.stop();
+			
+			for (Entity e : entities) {
+				entity.increaseRotation(0, 1, 0);
+				renderer.processEntity(e);
+			}
+			
+			renderer.render(light, camera);
 			DisplayManager.updateDisplay();
 		}
 
-		shader.cleanUp();
+		renderer.cleanUp();
 		loader.cleanUp();
 		DisplayManager.closeDisplay();
 
