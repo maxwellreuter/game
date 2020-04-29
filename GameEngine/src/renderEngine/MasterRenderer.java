@@ -83,7 +83,7 @@ public class MasterRenderer {
 	public void prepare() {
 		GL11.glEnable(GL11.GL_DEPTH_TEST);
 		GL11.glClear(GL11.GL_COLOR_BUFFER_BIT|GL11.GL_DEPTH_BUFFER_BIT);
-		GL11.glClearColor(1, 1, 1, 1);
+		GL11.glClearColor(135/(float)256, 206/(float)256, 235/(float)256, 1);
 	}
 	
 	
