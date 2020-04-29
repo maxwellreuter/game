@@ -4,6 +4,7 @@ package engineTester;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 import org.lwjgl.opengl.Display;
 import org.lwjgl.util.vector.Vector3f;
@@ -30,8 +31,9 @@ public class MainGameLoop {
 		Loader loader = new Loader();
 
 		// RawModel model = OBJLoader.loadObjModel("runescapeCharacter", loader);
-		RawModel model = OBJLoader.loadObjModel("person", loader);
+		RawModel model = OBJLoader.loadObjModel("tree", loader);
 
+		/*
 		TexturedModel staticModel = new TexturedModel(model, new ModelTexture(loader.loadTexture("blink-182")));
 		ModelTexture texture = staticModel.getTexture();
 		texture.setShineDamper(10);
@@ -44,10 +46,32 @@ public class MainGameLoop {
 		Entity entity = new Entity(staticModel, new Vector3f(0, -5, -25), 0, 0, 0, 1);
 		//List<Entity> entities = new ArrayList<>();
 		//entities.add(entity);
-		Light light = new Light(new Vector3f(2000, 2000, 2000), new Vector3f(1, 1, 1));
+		*/
 		
-		Terrain terrain = new Terrain(0,-1,loader,new ModelTexture(loader.loadTexture("sand")));
-		Terrain terrain2 = new Terrain(-1,-1,loader,new ModelTexture(loader.loadTexture("sand")));
+		Light light = new Light(new Vector3f(20000, 20000, 20000), new Vector3f(1, 1, 1));
+		
+		
+		TexturedModel texturedTree = new TexturedModel(OBJLoader.loadObjModel("tree", loader),
+				new ModelTexture(loader.loadTexture("tree")));
+		TexturedModel texturedGrass = new TexturedModel(OBJLoader.loadObjModel("grassModel", loader),
+				new ModelTexture(loader.loadTexture("grassTexture")));
+		texturedGrass.getTexture().setHasTransparency(true);
+		texturedGrass.getTexture().setUseFakeLighting(true);
+		TexturedModel texturedFern = new TexturedModel(OBJLoader.loadObjModel("fern", loader),
+				new ModelTexture(loader.loadTexture("fern")));
+		texturedFern.getTexture().setHasTransparency(true);
+		//texturedFern.getTexture().setUseFakeLighting(true);
+		
+		List<Entity> entities = new ArrayList<Entity>();
+		Random random = new Random();
+		for(int i=0;i<1000;i++){
+		   entities.add(new Entity(texturedTree, new Vector3f(random.nextFloat()*1600 - 800,0,random.nextFloat() * -800),0,0,0,3));
+		   entities.add(new Entity(texturedGrass, new Vector3f(random.nextFloat() * 1600 -800, 0, random.nextFloat() * -800), 0, 0, 0, 1));
+		   entities.add(new Entity(texturedFern, new Vector3f(random.nextFloat() * 1600 -800, 0, random.nextFloat() * -800), 0, 0, 0, 0.6f));
+		}
+		
+		Terrain terrain = new Terrain(0,-1,loader,new ModelTexture(loader.loadTexture("grass")));
+		Terrain terrain2 = new Terrain(-1,-1,loader,new ModelTexture(loader.loadTexture("grass")));
 
 		Camera camera = new Camera();
 
@@ -60,6 +84,10 @@ public class MainGameLoop {
 			
 			renderer.processTerrain(terrain);
 			renderer.processTerrain(terrain2);
+			
+			for(Entity entity:entities) {
+			 renderer.processEntity(entity);
+			}
 			//renderer.processEntity(entity);
 			
 			renderer.render(light, camera);
