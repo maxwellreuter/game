@@ -19,6 +19,10 @@ import toolbox.Maths;
 
 public class TerrainRenderer {
 	
+	private static final float RED = 135/(float)256;
+	private static final float GREEN = 206/(float)256;
+	private static final float BLUE = 235/(float)256;
+	
 	private TerrainShader shader;
 	
 	public TerrainRenderer(TerrainShader shader, Matrix4f projectionMatrix) {
@@ -46,6 +50,7 @@ public class TerrainRenderer {
 		GL20.glEnableVertexAttribArray(1);
 		GL20.glEnableVertexAttribArray(2);
 		ModelTexture texture = terrain.getTexture();
+		shader.loadSkyColour(RED, GREEN, BLUE);
 		shader.loadShineVariables(texture.getShineDamper(), texture.getReflectivity());
 		GL13.glActiveTexture(GL13.GL_TEXTURE0);
 		GL11.glBindTexture(GL11.GL_TEXTURE_2D, texture.getID());
