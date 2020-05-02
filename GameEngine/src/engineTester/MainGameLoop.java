@@ -22,6 +22,8 @@ import renderEngine.EntityRenderer;
 import shaders.StaticShader;
 import terrains.Terrain;
 import textures.ModelTexture;
+import textures.TerrainTexture;
+import textures.TerrainTexturePack;
 
 public class MainGameLoop {
 
@@ -29,6 +31,15 @@ public class MainGameLoop {
 
 		DisplayManager.createDisplay();
 		Loader loader = new Loader();
+		
+		TerrainTexture backgroundTexture = new TerrainTexture(loader.loadTexture("grassy"));
+		TerrainTexture rTexture = new TerrainTexture(loader.loadTexture("dirt"));
+		TerrainTexture gTexture = new TerrainTexture(loader.loadTexture("pinkFlowers"));
+		TerrainTexture bTexture = new TerrainTexture(loader.loadTexture("path"));
+		
+		TerrainTexturePack texturePack = new TerrainTexturePack(backgroundTexture, rTexture,
+				gTexture, bTexture);
+		TerrainTexture blendMap = new TerrainTexture(loader.loadTexture("blendMap"));
 
 		// RawModel model = OBJLoader.loadObjModel("runescapeCharacter", loader);
 		RawModel model = OBJLoader.loadObjModel("tree", loader);
@@ -65,13 +76,13 @@ public class MainGameLoop {
 		List<Entity> entities = new ArrayList<Entity>();
 		Random random = new Random();
 		for(int i=0;i<1000;i++){
-		   entities.add(new Entity(texturedTree, new Vector3f(random.nextFloat()*1600 - 800,0,random.nextFloat() * -800),0,0,0,3));
+		   entities.add(new Entity(texturedTree, new Vector3f(random.nextFloat()*1600 - 800,0,random.nextFloat() * -800),0,0,0,3f));
 		   entities.add(new Entity(texturedGrass, new Vector3f(random.nextFloat() * 1600 -800, 0, random.nextFloat() * -800), 0, 0, 0, 1));
 		   entities.add(new Entity(texturedFern, new Vector3f(random.nextFloat() * 1600 -800, 0, random.nextFloat() * -800), 0, 0, 0, 0.6f));
 		}
 		
-		Terrain terrain = new Terrain(0,-1,loader,new ModelTexture(loader.loadTexture("grass")));
-		Terrain terrain2 = new Terrain(-1,-1,loader,new ModelTexture(loader.loadTexture("grass")));
+		Terrain terrain = new Terrain(0, -1, loader, texturePack, blendMap);
+		Terrain terrain2 = new Terrain(-1, -1, loader, texturePack, blendMap);
 
 		Camera camera = new Camera();
 

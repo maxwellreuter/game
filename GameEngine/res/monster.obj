@@ -1,0 +1,3182 @@
+# Apple ModelIO OBJ File: monster
+mtllib monster.mtl
+g 
+v -24 173 -4
+v -24 168 7
+v -27 142 -7
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_1
+f 1/1 2/2 3/3
+s off
+g _1
+v -24 173 -4
+v -27 142 -7
+v -26 142 -26
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_2
+f 4/4 5/5 6/6
+s off
+g _2
+v -24 173 -4
+v -26 142 -26
+v -36 172 -2
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_3
+f 7/7 8/8 9/9
+s off
+g _3
+v -24 173 -4
+v -36 172 -2
+v -24 168 7
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_4
+f 10/10 11/11 12/12
+s off
+g _4
+v -24 168 7
+v -36 172 -2
+v -36 169 5
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_5
+f 13/13 14/14 15/15
+s off
+g _5
+v -24 168 7
+v -36 169 5
+v -36 142 -7
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_6
+f 16/16 17/17 18/18
+s off
+g _6
+v -24 168 7
+v -36 142 -7
+v -27 142 -7
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_7
+f 19/19 20/20 21/21
+s off
+g _7
+v -27 142 -7
+v -36 142 -7
+v -36 116 8
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_8
+f 22/22 23/23 24/24
+s off
+g _8
+v -27 142 -7
+v -36 116 8
+v -27 116 8
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_9
+f 25/25 26/26 27/27
+s off
+g _9
+v -27 142 -7
+v -27 116 8
+v -24 122 -13
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_10
+f 28/28 29/29 30/30
+s off
+g _10
+v -27 142 -7
+v -24 122 -13
+v -27 132 -20
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_11
+f 31/31 32/32 33/33
+s off
+g _11
+v -27 142 -7
+v -27 132 -20
+v -26 142 -26
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_12
+f 34/34 35/35 36/36
+s off
+g _12
+v -26 142 -26
+v -27 132 -20
+v -36 132 -20
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_13
+f 37/37 38/38 39/39
+s off
+g _13
+v -26 142 -26
+v -36 132 -20
+v -39 142 -26
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_14
+f 40/40 41/41 42/42
+s off
+g _14
+v -26 142 -26
+v -39 142 -26
+v -36 172 -2
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_15
+f 43/43 44/44 45/45
+s off
+g _15
+v -36 172 -2
+v -39 142 -26
+v -36 169 5
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_16
+f 46/46 47/47 48/48
+s off
+g _16
+v -36 169 5
+v -39 142 -26
+v -36 142 -7
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_17
+f 49/49 50/50 51/51
+s off
+g _17
+v -36 142 -7
+v -39 142 -26
+v -36 132 -20
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_18
+f 52/52 53/53 54/54
+s off
+g _18
+v -36 142 -7
+v -36 132 -20
+v -39 122 -13
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_19
+f 55/55 56/56 57/57
+s off
+g _19
+v -36 142 -7
+v -39 122 -13
+v -36 108 2
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_20
+f 58/58 59/59 60/60
+s off
+g _20
+v -36 142 -7
+v -36 108 2
+v -36 116 8
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_21
+f 61/61 62/62 63/63
+s off
+g _21
+v -36 116 8
+v -36 108 2
+v -27 108 2
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_22
+f 64/64 65/65 66/66
+s off
+g _22
+v -36 116 8
+v -27 108 2
+v -27 116 8
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_23
+f 67/67 68/68 69/69
+s off
+g _23
+v -27 116 8
+v -27 108 2
+v -24 122 -13
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_24
+f 70/70 71/71 72/72
+s off
+g _24
+v -24 122 -13
+v -27 108 2
+v -39 122 -13
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_25
+f 73/73 74/74 75/75
+s off
+g _25
+v -24 122 -13
+v -39 122 -13
+v -27 132 -20
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_26
+f 76/76 77/77 78/78
+s off
+g _26
+v -27 132 -20
+v -39 122 -13
+v -36 132 -20
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_27
+f 79/79 80/80 81/81
+s off
+g _27
+v -39 122 -13
+v -27 108 2
+v -36 108 2
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_28
+f 82/82 83/83 84/84
+s off
+g _28
+v 26 142 -26
+v 27 142 -7
+v 24 168 7
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_29
+f 85/85 86/86 87/87
+s off
+g _29
+v 26 142 -26
+v 24 168 7
+v 24 173 -4
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_30
+f 88/88 89/89 90/90
+s off
+g _30
+v 26 142 -26
+v 24 173 -4
+v 39 142 -26
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_31
+f 91/91 92/92 93/93
+s off
+g _31
+v 26 142 -26
+v 39 142 -26
+v 27 132 -20
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_32
+f 94/94 95/95 96/96
+s off
+g _32
+v 26 142 -26
+v 27 132 -20
+v 27 142 -7
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_33
+f 97/97 98/98 99/99
+s off
+g _33
+v 27 142 -7
+v 27 132 -20
+v 24 122 -13
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_34
+f 100/100 101/101 102/102
+s off
+g _34
+v 27 142 -7
+v 24 122 -13
+v 27 108 2
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_35
+f 103/103 104/104 105/105
+s off
+g _35
+v 27 142 -7
+v 27 108 2
+v 27 116 8
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_36
+f 106/106 107/107 108/108
+s off
+g _36
+v 27 142 -7
+v 27 116 8
+v 36 142 -7
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_37
+f 109/109 110/110 111/111
+s off
+g _37
+v 27 142 -7
+v 36 142 -7
+v 36 169 5
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_38
+f 112/112 113/113 114/114
+s off
+g _38
+v 27 142 -7
+v 36 169 5
+v 24 168 7
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_39
+f 115/115 116/116 117/117
+s off
+g _39
+v 24 168 7
+v 36 169 5
+v 24 173 -4
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_40
+f 118/118 119/119 120/120
+s off
+g _40
+v 24 173 -4
+v 36 169 5
+v 36 172 -2
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_41
+f 121/121 122/122 123/123
+s off
+g _41
+v 24 173 -4
+v 36 172 -2
+v 39 142 -26
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_42
+f 124/124 125/125 126/126
+s off
+g _42
+v 39 142 -26
+v 36 172 -2
+v 36 142 -7
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_43
+f 127/127 128/128 129/129
+s off
+g _43
+v 39 142 -26
+v 36 142 -7
+v 36 132 -20
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_44
+f 130/130 131/131 132/132
+s off
+g _44
+v 39 142 -26
+v 36 132 -20
+v 27 132 -20
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_45
+f 133/133 134/134 135/135
+s off
+g _45
+v 27 132 -20
+v 36 132 -20
+v 24 122 -13
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_46
+f 136/136 137/137 138/138
+s off
+g _46
+v 24 122 -13
+v 36 132 -20
+v 39 122 -13
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_47
+f 139/139 140/140 141/141
+s off
+g _47
+v 24 122 -13
+v 39 122 -13
+v 36 108 2
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_48
+f 142/142 143/143 144/144
+s off
+g _48
+v 24 122 -13
+v 36 108 2
+v 27 108 2
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_49
+f 145/145 146/146 147/147
+s off
+g _49
+v 27 108 2
+v 36 108 2
+v 27 116 8
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_50
+f 148/148 149/149 150/150
+s off
+g _50
+v 27 116 8
+v 36 108 2
+v 36 116 8
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_51
+f 151/151 152/152 153/153
+s off
+g _51
+v 27 116 8
+v 36 116 8
+v 36 142 -7
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_52
+f 154/154 155/155 156/156
+s off
+g _52
+v 36 142 -7
+v 36 116 8
+v 39 122 -13
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_53
+f 157/157 158/158 159/159
+s off
+g _53
+v 36 142 -7
+v 39 122 -13
+v 36 132 -20
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_54
+f 160/160 161/161 162/162
+s off
+g _54
+v 36 142 -7
+v 36 172 -2
+v 36 169 5
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_55
+f 163/163 164/164 165/165
+s off
+g _55
+v 36 116 8
+v 36 108 2
+v 39 122 -13
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_56
+f 166/166 167/167 168/168
+s off
+g _56
+v -2 170 17
+v 0 170 14
+v 0 173 -13
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_57
+f 169/169 170/170 171/171
+s off
+g _57
+v -2 170 17
+v 0 173 -13
+v -2 173 -15
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_58
+f 172/172 173/173 174/174
+s off
+g _58
+v -2 170 17
+v -2 173 -15
+v -24 174 11
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_59
+f 175/175 176/176 177/177
+s off
+g _59
+v -2 170 17
+v -24 174 11
+v -24 155 9
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_60
+f 178/178 179/179 180/180
+s off
+g _60
+v -2 170 17
+v -24 155 9
+v -2 152 15
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_61
+f 181/181 182/182 183/183
+s off
+g _61
+v -2 170 17
+v -2 152 15
+v 0 170 14
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_62
+f 184/184 185/185 186/186
+s off
+g _62
+v 0 170 14
+v -2 152 15
+v 0 150 11
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_63
+f 187/187 188/188 189/189
+s off
+g _63
+v 0 170 14
+v 0 150 11
+v 2 170 17
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_64
+f 190/190 191/191 192/192
+s off
+g _64
+v 0 170 14
+v 2 170 17
+v 0 173 -13
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_65
+f 193/193 194/194 195/195
+s off
+g _65
+v 0 173 -13
+v 2 170 17
+v 2 173 -15
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_66
+f 196/196 197/197 198/198
+s off
+g _66
+v 0 173 -13
+v 2 173 -15
+v 2 153 -18
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_67
+f 199/199 200/200 201/201
+s off
+g _67
+v 0 173 -13
+v 2 153 -18
+v 0 152 -15
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_68
+f 202/202 203/203 204/204
+s off
+g _68
+v 0 173 -13
+v 0 152 -15
+v -2 173 -15
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_69
+f 205/205 206/206 207/207
+s off
+g _69
+v -2 173 -15
+v 0 152 -15
+v -2 153 -18
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_70
+f 208/208 209/209 210/210
+s off
+g _70
+v -2 173 -15
+v -2 153 -18
+v -24 176 -10
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_71
+f 211/211 212/212 213/213
+s off
+g _71
+v -2 173 -15
+v -24 176 -10
+v -24 174 11
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_72
+f 214/214 215/215 216/216
+s off
+g _72
+v -24 174 11
+v -24 176 -10
+v -24 157 -12
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_73
+f 217/217 218/218 219/219
+s off
+g _73
+v -24 174 11
+v -24 157 -12
+v -24 155 9
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_74
+f 220/220 221/221 222/222
+s off
+g _74
+v -24 155 9
+v -24 157 -12
+v -13 147 11
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_75
+f 223/223 224/224 225/225
+s off
+g _75
+v -24 155 9
+v -13 147 11
+v -2 152 15
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_76
+f 226/226 227/227 228/228
+s off
+g _76
+v -2 152 15
+v -13 147 11
+v 0 150 11
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_77
+f 229/229 230/230 231/231
+s off
+g _77
+v 0 150 11
+v -13 147 11
+v 13 147 11
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_78
+f 232/232 233/233 234/234
+s off
+g _78
+v 0 150 11
+v 13 147 11
+v 2 152 15
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_79
+f 235/235 236/236 237/237
+s off
+g _79
+v 0 150 11
+v 2 152 15
+v 2 170 17
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_80
+f 238/238 239/239 240/240
+s off
+g _80
+v 2 170 17
+v 2 152 15
+v 24 174 11
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_81
+f 241/241 242/242 243/243
+s off
+g _81
+v 2 170 17
+v 24 174 11
+v 24 176 -10
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_82
+f 244/244 245/245 246/246
+s off
+g _82
+v 2 170 17
+v 24 176 -10
+v 2 173 -15
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_83
+f 247/247 248/248 249/249
+s off
+g _83
+v 2 173 -15
+v 24 176 -10
+v 24 157 -12
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_84
+f 250/250 251/251 252/252
+s off
+g _84
+v 2 173 -15
+v 24 157 -12
+v 2 153 -18
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_85
+f 253/253 254/254 255/255
+s off
+g _85
+v 2 153 -18
+v 24 157 -12
+v 13 150 -13
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_86
+f 256/256 257/257 258/258
+s off
+g _86
+v 2 153 -18
+v 13 150 -13
+v 16 125 -11
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_87
+f 259/259 260/260 261/261
+s off
+g _87
+v 2 153 -18
+v 16 125 -11
+v 0 125 -13
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_88
+f 262/262 263/263 264/264
+s off
+g _88
+v 2 153 -18
+v 0 125 -13
+v 0 152 -15
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_89
+f 265/265 266/266 267/267
+s off
+g _89
+v 0 152 -15
+v 0 125 -13
+v -2 153 -18
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_90
+f 268/268 269/269 270/270
+s off
+g _90
+v -2 153 -18
+v 0 125 -13
+v -16 125 -11
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_91
+f 271/271 272/272 273/273
+s off
+g _91
+v -2 153 -18
+v -16 125 -11
+v -13 150 -13
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_92
+f 274/274 275/275 276/276
+s off
+g _92
+v -2 153 -18
+v -13 150 -13
+v -24 157 -12
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_93
+f 277/277 278/278 279/279
+s off
+g _93
+v -2 153 -18
+v -24 157 -12
+v -24 176 -10
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_94
+f 280/280 281/281 282/282
+s off
+g _94
+v 15 62 -8
+v 11 62 -8
+v 8 40 4
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_95
+f 283/283 284/284 285/285
+s off
+g _95
+v 15 62 -8
+v 8 40 4
+v 21 40 4
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_96
+f 286/286 287/287 288/288
+s off
+g _96
+v 15 62 -8
+v 21 40 4
+v 21 43 -13
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_97
+f 289/289 290/290 291/291
+s off
+g _97
+v 15 62 -8
+v 21 43 -13
+v 15 63 -19
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_98
+f 292/292 293/293 294/294
+s off
+g _98
+v 15 62 -8
+v 15 63 -19
+v 15 70 -13
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_99
+f 295/295 296/296 297/297
+s off
+g _99
+v 15 62 -8
+v 15 70 -13
+v 17 95 0
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_100
+f 298/298 299/299 300/300
+s off
+g _100
+v 15 62 -8
+v 17 95 0
+v 17 78 8
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_101
+f 301/301 302/302 303/303
+s off
+g _101
+v 15 62 -8
+v 17 78 8
+v 11 62 -8
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_102
+f 304/304 305/305 306/306
+s off
+g _102
+v 11 62 -8
+v 17 78 8
+v 5 77 6
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_103
+f 307/307 308/308 309/309
+s off
+g _103
+v 11 62 -8
+v 5 77 6
+v 10 70 -13
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_104
+f 310/310 311/311 312/312
+s off
+g _104
+v 11 62 -8
+v 10 70 -13
+v 8 41 -13
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_105
+f 313/313 314/314 315/315
+s off
+g _105
+v 11 62 -8
+v 8 41 -13
+v 8 40 4
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_106
+f 316/316 317/317 318/318
+s off
+g _106
+v 21 43 -13
+v 8 41 -13
+v 11 63 -19
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_107
+f 319/319 320/320 321/321
+s off
+g _107
+v 21 43 -13
+v 11 63 -19
+v 15 63 -19
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_108
+f 322/322 323/323 324/324
+s off
+g _108
+v 15 63 -19
+v 11 63 -19
+v 10 73 -22
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_109
+f 325/325 326/326 327/327
+s off
+g _109
+v 15 63 -19
+v 10 73 -22
+v 15 73 -22
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_110
+f 328/328 329/329 330/330
+s off
+g _110
+v 15 63 -19
+v 15 73 -22
+v 15 70 -13
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_111
+f 331/331 332/332 333/333
+s off
+g _111
+v 15 70 -13
+v 15 73 -22
+v 10 70 -13
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_112
+f 334/334 335/335 336/336
+s off
+g _112
+v 15 70 -13
+v 10 70 -13
+v 4 93 0
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_113
+f 337/337 338/338 339/339
+s off
+g _113
+v 15 70 -13
+v 4 93 0
+v 17 95 0
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_114
+f 340/340 341/341 342/342
+s off
+g _114
+v 17 95 0
+v 4 93 0
+v 0 108 -19
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_115
+f 343/343 344/344 345/345
+s off
+g _115
+v 17 95 0
+v 0 108 -19
+v 19 111 -19
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_116
+f 346/346 347/347 348/348
+s off
+g _116
+v 17 95 0
+v 19 111 -19
+v 16 96 15
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_117
+f 349/349 350/350 351/351
+s off
+g _117
+v 17 95 0
+v 16 96 15
+v 16 90 22
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_118
+f 352/352 353/353 354/354
+s off
+g _118
+v 17 95 0
+v 16 90 22
+v 17 78 8
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_119
+f 355/355 356/356 357/357
+s off
+g _119
+v 17 78 8
+v 16 90 22
+v 5 77 6
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_120
+f 358/358 359/359 360/360
+s off
+g _120
+v 5 77 6
+v 16 90 22
+v 5 88 22
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_121
+f 361/361 362/362 363/363
+s off
+g _121
+v 5 77 6
+v 5 88 22
+v 4 96 15
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_122
+f 364/364 365/365 366/366
+s off
+g _122
+v 5 77 6
+v 4 96 15
+v 4 93 0
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_123
+f 367/367 368/368 369/369
+s off
+g _123
+v 5 77 6
+v 4 93 0
+v 10 70 -13
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_124
+f 370/370 371/371 372/372
+s off
+g _124
+v 10 70 -13
+v 11 63 -19
+v 8 41 -13
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_125
+f 373/373 374/374 375/375
+s off
+g _125
+v 11 63 -19
+v 10 70 -13
+v 10 73 -22
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_126
+f 376/376 377/377 378/378
+s off
+g _126
+v 10 73 -22
+v 10 70 -13
+v 15 73 -22
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_127
+f 379/379 380/380 381/381
+s off
+g _127
+v 16 96 15
+v 4 96 15
+v 5 88 22
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_128
+f 382/382 383/383 384/384
+s off
+g _128
+v 16 96 15
+v 5 88 22
+v 16 90 22
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_129
+f 385/385 386/386 387/387
+s off
+g _129
+v -17 70 -13
+v -17 62 -8
+v -19 78 8
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_130
+f 388/388 389/389 390/390
+s off
+g _130
+v -17 70 -13
+v -19 78 8
+v -18 95 0
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_131
+f 391/391 392/392 393/393
+s off
+g _131
+v -17 70 -13
+v -18 95 0
+v -11 70 -13
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_132
+f 394/394 395/395 396/396
+s off
+g _132
+v -17 70 -13
+v -11 70 -13
+v -11 73 -22
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_133
+f 397/397 398/398 399/399
+s off
+g _133
+v -17 70 -13
+v -11 73 -22
+v -16 73 -22
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_134
+f 400/400 401/401 402/402
+s off
+g _134
+v -17 70 -13
+v -16 73 -22
+v -17 63 -19
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_135
+f 403/403 404/404 405/405
+s off
+g _135
+v -17 70 -13
+v -17 63 -19
+v -22 43 -13
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_136
+f 406/406 407/407 408/408
+s off
+g _136
+v -17 70 -13
+v -22 43 -13
+v -17 62 -8
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_137
+f 409/409 410/410 411/411
+s off
+g _137
+v -17 62 -8
+v -22 43 -13
+v -22 40 4
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_138
+f 412/412 413/413 414/414
+s off
+g _138
+v -17 62 -8
+v -22 40 4
+v -12 62 -8
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_139
+f 415/415 416/416 417/417
+s off
+g _139
+v -17 62 -8
+v -12 62 -8
+v -6 77 6
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_140
+f 418/418 419/419 420/420
+s off
+g _140
+v -17 62 -8
+v -6 77 6
+v -19 78 8
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_141
+f 421/421 422/422 423/423
+s off
+g _141
+v -19 78 8
+v -6 77 6
+v -5 88 22
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_142
+f 424/424 425/425 426/426
+s off
+g _142
+v -19 78 8
+v -5 88 22
+v -16 90 22
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_143
+f 427/427 428/428 429/429
+s off
+g _143
+v -19 78 8
+v -16 90 22
+v -18 95 0
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_144
+f 430/430 431/431 432/432
+s off
+g _144
+v -18 95 0
+v -16 90 22
+v -17 96 15
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_145
+f 433/433 434/434 435/435
+s off
+g _145
+v -18 95 0
+v -17 96 15
+v -20 111 -19
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_146
+f 436/436 437/437 438/438
+s off
+g _146
+v -18 95 0
+v -20 111 -19
+v -6 93 0
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_147
+f 439/439 440/440 441/441
+s off
+g _147
+v -18 95 0
+v -6 93 0
+v -11 70 -13
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_148
+f 442/442 443/443 444/444
+s off
+g _148
+v -11 70 -13
+v -6 93 0
+v -12 62 -8
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_149
+f 445/445 446/446 447/447
+s off
+g _149
+v -11 70 -13
+v -12 62 -8
+v -12 63 -19
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_150
+f 448/448 449/449 450/450
+s off
+g _150
+v -11 70 -13
+v -12 63 -19
+v -11 73 -22
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_151
+f 451/451 452/452 453/453
+s off
+g _151
+v -11 73 -22
+v -12 63 -19
+v -16 73 -22
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_152
+f 454/454 455/455 456/456
+s off
+g _152
+v -16 73 -22
+v -12 63 -19
+v -17 63 -19
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_153
+f 457/457 458/458 459/459
+s off
+g _153
+v -17 63 -19
+v -12 63 -19
+v -10 41 -13
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_154
+f 460/460 461/461 462/462
+s off
+g _154
+v -17 63 -19
+v -10 41 -13
+v -22 43 -13
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_155
+f 463/463 464/464 465/465
+s off
+g _155
+v -6 93 0
+v -6 77 6
+v -12 62 -8
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_156
+f 466/466 467/467 468/468
+s off
+g _156
+v -6 77 6
+v -6 93 0
+v -5 88 22
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_157
+f 469/469 470/470 471/471
+s off
+g _157
+v -5 88 22
+v -6 93 0
+v -5 96 15
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_158
+f 472/472 473/473 474/474
+s off
+g _158
+v -5 88 22
+v -5 96 15
+v -16 90 22
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_159
+f 475/475 476/476 477/477
+s off
+g _159
+v -16 90 22
+v -5 96 15
+v -17 96 15
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_160
+f 478/478 479/479 480/480
+s off
+g _160
+v -17 96 15
+v -5 96 15
+v -2 119 8
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_161
+f 481/481 482/482 483/483
+s off
+g _161
+v -17 96 15
+v -2 119 8
+v -17 121 5
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_162
+f 484/484 485/485 486/486
+s off
+g _162
+v -17 96 15
+v -17 121 5
+v -20 111 -19
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_163
+f 487/487 488/488 489/489
+s off
+g _163
+v -20 111 -19
+v -17 121 5
+v -16 125 -11
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_164
+f 490/490 491/491 492/492
+s off
+g _164
+v -20 111 -19
+v -16 125 -11
+v -1 108 -19
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_165
+f 493/493 494/494 495/495
+s off
+g _165
+v -20 111 -19
+v -1 108 -19
+v -6 93 0
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_166
+f 496/496 497/497 498/498
+s off
+g _166
+v -6 93 0
+v -1 108 -19
+v -5 96 15
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_167
+f 499/499 500/500 501/501
+s off
+g _167
+v -5 96 15
+v -1 108 -19
+v -2 119 8
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_168
+f 502/502 503/503 504/504
+s off
+g _168
+v -2 119 8
+v -1 108 -19
+v 0 125 -13
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_169
+f 505/505 506/506 507/507
+s off
+g _169
+v -2 119 8
+v 0 125 -13
+v 0 119 8
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_170
+f 508/508 509/509 510/510
+s off
+g _170
+v -2 119 8
+v 0 119 8
+v 11 130 5
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_171
+f 511/511 512/512 513/513
+s off
+g _171
+v -2 119 8
+v 11 130 5
+v -11 130 5
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_172
+f 514/514 515/515 516/516
+s off
+g _172
+v -2 119 8
+v -11 130 5
+v -17 121 5
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_173
+f 517/517 518/518 519/519
+s off
+g _173
+v -17 121 5
+v -11 130 5
+v -16 125 -11
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_174
+f 520/520 521/521 522/522
+s off
+g _174
+v -16 125 -11
+v -11 130 5
+v -13 150 -13
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_175
+f 523/523 524/524 525/525
+s off
+g _175
+v -13 150 -13
+v -11 130 5
+v -13 147 11
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_176
+f 526/526 527/527 528/528
+s off
+g _176
+v -13 150 -13
+v -13 147 11
+v -24 157 -12
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_177
+f 529/529 530/530 531/531
+s off
+g _177
+v 16 125 -11
+v 16 121 5
+v 19 111 -19
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_178
+f 532/532 533/533 534/534
+s off
+g _178
+v 16 125 -11
+v 19 111 -19
+v 0 125 -13
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_179
+f 535/535 536/536 537/537
+s off
+g _179
+v 0 125 -13
+v 19 111 -19
+v 0 108 -19
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_180
+f 538/538 539/539 540/540
+s off
+g _180
+v 0 125 -13
+v 0 108 -19
+v 0 119 8
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_181
+f 541/541 542/542 543/543
+s off
+g _181
+v 0 119 8
+v 0 108 -19
+v 4 93 0
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_182
+f 544/544 545/545 546/546
+s off
+g _182
+v 0 119 8
+v 4 93 0
+v 4 96 15
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_183
+f 547/547 548/548 549/549
+s off
+g _183
+v 0 119 8
+v 4 96 15
+v 16 121 5
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_184
+f 550/550 551/551 552/552
+s off
+g _184
+v 0 119 8
+v 16 121 5
+v 11 130 5
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_185
+f 553/553 554/554 555/555
+s off
+g _185
+v 11 130 5
+v 16 121 5
+v 16 125 -11
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_186
+f 556/556 557/557 558/558
+s off
+g _186
+v 11 130 5
+v 16 125 -11
+v 13 147 11
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_187
+f 559/559 560/560 561/561
+s off
+g _187
+v 11 130 5
+v 13 147 11
+v -13 147 11
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_188
+f 562/562 563/563 564/564
+s off
+g _188
+v 11 130 5
+v -13 147 11
+v -11 130 5
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_189
+f 565/565 566/566 567/567
+s off
+g _189
+v 16 121 5
+v 4 96 15
+v 16 96 15
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_190
+f 568/568 569/569 570/570
+s off
+g _190
+v 16 121 5
+v 16 96 15
+v 19 111 -19
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_191
+f 571/571 572/572 573/573
+s off
+g _191
+v -16 125 -11
+v 0 125 -13
+v -1 108 -19
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_192
+f 574/574 575/575 576/576
+s off
+g _192
+v -22 40 4
+v -10 40 4
+v -12 62 -8
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_193
+f 577/577 578/578 579/579
+s off
+g _193
+v -12 62 -8
+v -10 40 4
+v -10 41 -13
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_194
+f 580/580 581/581 582/582
+s off
+g _194
+v -12 62 -8
+v -10 41 -13
+v -12 63 -19
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_195
+f 583/583 584/584 585/585
+s off
+g _195
+v 13 147 11
+v 16 125 -11
+v 13 150 -13
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_196
+f 586/586 587/587 588/588
+s off
+g _196
+v 13 147 11
+v 13 150 -13
+v 24 155 9
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_197
+f 589/589 590/590 591/591
+s off
+g _197
+v 13 147 11
+v 24 155 9
+v 2 152 15
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_198
+f 592/592 593/593 594/594
+s off
+g _198
+v 2 152 15
+v 24 155 9
+v 24 174 11
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_199
+f 595/595 596/596 597/597
+s off
+g _199
+v 24 174 11
+v 24 155 9
+v 24 176 -10
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_200
+f 598/598 599/599 600/600
+s off
+g _200
+v 24 176 -10
+v 24 155 9
+v 24 157 -12
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_201
+f 601/601 602/602 603/603
+s off
+g _201
+v 24 157 -12
+v 24 155 9
+v 13 150 -13
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_202
+f 604/604 605/605 606/606
+s off
+g _202
+v -40 0 -32
+v -40 0 32
+v -32 40 24
+vt 0 0
+vt 1 0
+vt 0.75 1
+usemtl material_203
+f 607/607 608/608 609/609
+s off
+g _203
+v -40 0 -32
+v -32 40 24
+v -32 40 -24
+vt 0 0
+vt 0.75 1
+vt 0 1
+usemtl material_204
+f 610/610 611/611 612/612
+s off
+g _204
+v -40 0 -32
+v -32 40 -24
+v 40 0 -32
+vt 1 0
+vt 0.8 1
+vt 0 0
+usemtl material_205
+f 613/613 614/614 615/615
+s off
+g _205
+v 40 0 -32
+v -32 40 -24
+v 32 40 -24
+vt 0 0
+vt 0.8 1
+vt 0 1
+usemtl material_206
+f 616/616 617/617 618/618
+s off
+g _206
+v 40 0 -32
+v 32 40 -24
+v 40 0 32
+vt 1 0
+vt 0.75 1
+vt 0 0
+usemtl material_207
+f 619/619 620/620 621/621
+s off
+g _207
+v 40 0 32
+v 32 40 -24
+v 32 40 24
+vt 0 0
+vt 0.75 1
+vt 0 1
+usemtl material_208
+f 622/622 623/623 624/624
+s off
+g _208
+v 40 0 32
+v 32 40 24
+v -40 0 32
+vt 1 0
+vt 0.8 1
+vt 0 0
+usemtl material_209
+f 625/625 626/626 627/627
+s off
+g _209
+v -40 0 32
+v 32 40 24
+v -32 40 24
+vt 0 0
+vt 0.8 1
+vt 0 1
+usemtl material_210
+f 628/628 629/629 630/630
+s off
+g _210
+v -32 40 24
+v 32 40 24
+v -32 40 -24
+vt 1 0
+vt 1 1
+vt 0 0
+usemtl material_211
+f 631/631 632/632 633/633
+s off
+g _211
+v -32 40 -24
+v 32 40 24
+v 32 40 -24
+vt 0 0
+vt 1 1
+vt 0 1
+usemtl material_212
+f 634/634 635/635 636/636
+s off
+g _212
+v -11 204 -4
+v -11 208 0
+v -2 212 0
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_213
+f 637/637 638/638 639/639
+s off
+g _213
+v -11 204 -4
+v -2 212 0
+v -2 206 -8
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_214
+f 640/640 641/641 642/642
+s off
+g _214
+v -11 204 -4
+v -2 206 -8
+v -2 188 -14
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_215
+f 643/643 644/644 645/645
+s off
+g _215
+v -11 204 -4
+v -2 188 -14
+v -11 188 -10
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_216
+f 646/646 647/647 648/648
+s off
+g _216
+v -11 204 -4
+v -11 188 -10
+v -19 201 4
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_217
+f 649/649 650/650 651/651
+s off
+g _217
+v -11 204 -4
+v -19 201 4
+v -11 208 0
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_218
+f 652/652 653/653 654/654
+s off
+g _218
+v -11 208 0
+v -19 201 4
+v -11 208 10
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_219
+f 655/655 656/656 657/657
+s off
+g _219
+v -11 208 0
+v -11 208 10
+v -2 212 0
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_220
+f 658/658 659/659 660/660
+s off
+g _220
+v -2 212 0
+v -11 208 10
+v -2 211 12
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_221
+f 661/661 662/662 663/663
+s off
+g _221
+v -2 212 0
+v -2 211 12
+v 2 212 0
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_222
+f 664/664 665/665 666/666
+s off
+g _222
+v -2 212 0
+v 2 212 0
+v 2 206 -8
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_223
+f 667/667 668/668 669/669
+s off
+g _223
+v -2 212 0
+v 2 206 -8
+v -2 206 -8
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_224
+f 670/670 671/671 672/672
+s off
+g _224
+v -2 206 -8
+v 2 206 -8
+v 2 188 -14
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_225
+f 673/673 674/674 675/675
+s off
+g _225
+v -2 206 -8
+v 2 188 -14
+v -2 188 -14
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_226
+f 676/676 677/677 678/678
+s off
+g _226
+v -2 188 -14
+v 2 188 -14
+v 2 172 -20
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_227
+f 679/679 680/680 681/681
+s off
+g _227
+v -2 188 -14
+v 2 172 -20
+v -2 172 -20
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_228
+f 682/682 683/683 684/684
+s off
+g _228
+v -2 188 -14
+v -2 172 -20
+v -11 188 -10
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_229
+f 685/685 686/686 687/687
+s off
+g _229
+v -11 188 -10
+v -2 172 -20
+v -15 174 -17
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_230
+f 688/688 689/689 690/690
+s off
+g _230
+v -11 188 -10
+v -15 174 -17
+v -18 182 -2
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_231
+f 691/691 692/692 693/693
+s off
+g _231
+v -11 188 -10
+v -18 182 -2
+v -18 193 -1
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_232
+f 694/694 695/695 696/696
+s off
+g _232
+v -11 188 -10
+v -18 193 -1
+v -19 201 4
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_233
+f 697/697 698/698 699/699
+s off
+g _233
+v -19 201 4
+v -18 193 -1
+v -19 186 18
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_234
+f 700/700 701/701 702/702
+s off
+g _234
+v -19 201 4
+v -19 186 18
+v -20 204 16
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_235
+f 703/703 704/704 705/705
+s off
+g _235
+v -19 201 4
+v -20 204 16
+v -11 208 10
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_236
+f 706/706 707/707 708/708
+s off
+g _236
+v -11 208 10
+v -20 204 16
+v -2 211 12
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_237
+f 709/709 710/710 711/711
+s off
+g _237
+v -2 211 12
+v -20 204 16
+v -2 208 20
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_238
+f 712/712 713/713 714/714
+s off
+g _238
+v -2 211 12
+v -2 208 20
+v 2 211 12
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_239
+f 715/715 716/716 717/717
+s off
+g _239
+v -2 211 12
+v 2 211 12
+v 2 212 0
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_240
+f 718/718 719/719 720/720
+s off
+g _240
+v 2 212 0
+v 2 211 12
+v 11 208 0
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_241
+f 721/721 722/722 723/723
+s off
+g _241
+v 2 212 0
+v 11 208 0
+v 11 204 -4
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_242
+f 724/724 725/725 726/726
+s off
+g _242
+v 2 212 0
+v 11 204 -4
+v 2 206 -8
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_243
+f 727/727 728/728 729/729
+s off
+g _243
+v 2 206 -8
+v 11 204 -4
+v 12 188 -10
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_244
+f 730/730 731/731 732/732
+s off
+g _244
+v 2 206 -8
+v 12 188 -10
+v 2 188 -14
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_245
+f 733/733 734/734 735/735
+s off
+g _245
+v 2 188 -14
+v 12 188 -10
+v 15 174 -17
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_246
+f 736/736 737/737 738/738
+s off
+g _246
+v 2 188 -14
+v 15 174 -17
+v 2 172 -20
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_247
+f 739/739 740/740 741/741
+s off
+g _247
+v -2 196 42
+v 2 196 42
+v 2 208 20
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_248
+f 742/742 743/743 744/744
+s off
+g _248
+v -2 196 42
+v 2 208 20
+v -2 208 20
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_249
+f 745/745 746/746 747/747
+s off
+g _249
+v -2 196 42
+v -2 208 20
+v -8 194 36
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_250
+f 748/748 749/749 750/750
+s off
+g _250
+v -2 196 42
+v -8 194 36
+v -2 184 36
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_251
+f 751/751 752/752 753/753
+s off
+g _251
+v -2 196 42
+v -2 184 36
+v 2 184 36
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_252
+f 754/754 755/755 756/756
+s off
+g _252
+v -2 196 42
+v 2 184 36
+v 2 196 42
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_253
+f 757/757 758/758 759/759
+s off
+g _253
+v 2 196 42
+v 2 184 36
+v 8 188 34
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_254
+f 760/760 761/761 762/762
+s off
+g _254
+v 2 196 42
+v 8 188 34
+v 8 194 36
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_255
+f 763/763 764/764 765/765
+s off
+g _255
+v 2 196 42
+v 8 194 36
+v 20 204 16
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_256
+f 766/766 767/767 768/768
+s off
+g _256
+v 2 196 42
+v 20 204 16
+v 2 208 20
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_257
+f 769/769 770/770 771/771
+s off
+g _257
+v 2 208 20
+v 20 204 16
+v 11 208 10
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_258
+f 772/772 773/773 774/774
+s off
+g _258
+v 2 208 20
+v 11 208 10
+v 2 211 12
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_259
+f 775/775 776/776 777/777
+s off
+g _259
+v 2 208 20
+v 2 211 12
+v -2 208 20
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_260
+f 778/778 779/779 780/780
+s off
+g _260
+v -2 208 20
+v -20 204 16
+v -8 194 36
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_261
+f 781/781 782/782 783/783
+s off
+g _261
+v -8 194 36
+v -20 204 16
+v -8 188 34
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_262
+f 784/784 785/785 786/786
+s off
+g _262
+v -8 194 36
+v -8 188 34
+v -2 184 36
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_263
+f 787/787 788/788 789/789
+s off
+g _263
+v -2 184 36
+v -8 188 34
+v -19 186 18
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_264
+f 790/790 791/791 792/792
+s off
+g _264
+v -2 184 36
+v -19 186 18
+v -7 182 22
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_265
+f 793/793 794/794 795/795
+s off
+g _265
+v -2 184 36
+v -7 182 22
+v 2 184 36
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_266
+f 796/796 797/797 798/798
+s off
+g _266
+v 2 184 36
+v -7 182 22
+v 6 182 22
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_267
+f 799/799 800/800 801/801
+s off
+g _267
+v 2 184 36
+v 6 182 22
+v 8 188 34
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_268
+f 802/802 803/803 804/804
+s off
+g _268
+v 8 188 34
+v 6 182 22
+v 19 186 18
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_269
+f 805/805 806/806 807/807
+s off
+g _269
+v 8 188 34
+v 19 186 18
+v 8 194 36
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_270
+f 808/808 809/809 810/810
+s off
+g _270
+v 8 194 36
+v 19 186 18
+v 20 204 16
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_271
+f 811/811 812/812 813/813
+s off
+g _271
+v 20 204 16
+v 19 186 18
+v 19 201 4
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_272
+f 814/814 815/815 816/816
+s off
+g _272
+v 20 204 16
+v 19 201 4
+v 11 208 10
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_273
+f 817/817 818/818 819/819
+s off
+g _273
+v 11 208 10
+v 19 201 4
+v 11 208 0
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_274
+f 820/820 821/821 822/822
+s off
+g _274
+v 11 208 10
+v 11 208 0
+v 2 211 12
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_275
+f 823/823 824/824 825/825
+s off
+g _275
+v -20 204 16
+v -19 186 18
+v -8 188 34
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_276
+f 826/826 827/827 828/828
+s off
+g _276
+v -19 186 18
+v -11 179 13
+v -2 179 17
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_277
+f 829/829 830/830 831/831
+s off
+g _277
+v -19 186 18
+v -2 179 17
+v -7 182 22
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_278
+f 832/832 833/833 834/834
+s off
+g _278
+v -7 182 22
+v -2 179 17
+v 2 179 17
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_279
+f 835/835 836/836 837/837
+s off
+g _279
+v -7 182 22
+v 2 179 17
+v 6 182 22
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_280
+f 838/838 839/839 840/840
+s off
+g _280
+v 6 182 22
+v 2 179 17
+v 11 179 13
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_281
+f 841/841 842/842 843/843
+s off
+g _281
+v 6 182 22
+v 11 179 13
+v 19 186 18
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_282
+f 844/844 845/845 846/846
+s off
+g _282
+v 19 186 18
+v 11 179 13
+v 19 193 -1
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_283
+f 847/847 848/848 849/849
+s off
+g _283
+v 19 186 18
+v 19 193 -1
+v 19 201 4
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_284
+f 850/850 851/851 852/852
+s off
+g _284
+v 19 201 4
+v 19 193 -1
+v 12 188 -10
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_285
+f 853/853 854/854 855/855
+s off
+g _285
+v 19 201 4
+v 12 188 -10
+v 11 204 -4
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_286
+f 856/856 857/857 858/858
+s off
+g _286
+v 19 201 4
+v 11 204 -4
+v 11 208 0
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_287
+f 859/859 860/860 861/861
+s off
+g _287
+v 19 193 -1
+v 18 182 -2
+v 12 188 -10
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_288
+f 862/862 863/863 864/864
+s off
+g _288
+v 12 188 -10
+v 18 182 -2
+v 15 174 -17
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_289
+f 865/865 866/866 867/867
+s off
+g _289
+v 15 174 -17
+v 18 182 -2
+v 26 175 -3
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_290
+f 868/868 869/869 870/870
+s off
+g _290
+v 26 175 -3
+v 18 182 -2
+v 15 171 19
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_291
+f 871/871 872/872 873/873
+s off
+g _291
+v 15 171 19
+v 18 182 -2
+v 11 179 13
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_292
+f 874/874 875/875 876/876
+s off
+g _292
+v 15 171 19
+v 11 179 13
+v 2 179 17
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_293
+f 877/877 878/878 879/879
+s off
+g _293
+v 15 171 19
+v 2 179 17
+v 2 168 22
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_294
+f 880/880 881/881 882/882
+s off
+g _294
+v 2 168 22
+v 2 179 17
+v -2 179 17
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_295
+f 883/883 884/884 885/885
+s off
+g _295
+v 2 168 22
+v -2 179 17
+v -2 168 22
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_296
+f 886/886 887/887 888/888
+s off
+g _296
+v -2 168 22
+v -2 179 17
+v -11 179 13
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_297
+f 889/889 890/890 891/891
+s off
+g _297
+v -2 168 22
+v -11 179 13
+v -15 171 19
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_298
+f 892/892 893/893 894/894
+s off
+g _298
+v -15 171 19
+v -11 179 13
+v -18 182 -2
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_299
+f 895/895 896/896 897/897
+s off
+g _299
+v -15 171 19
+v -18 182 -2
+v -26 175 -3
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_300
+f 898/898 899/899 900/900
+s off
+g _300
+v -26 175 -3
+v -18 182 -2
+v -15 174 -17
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_301
+f 901/901 902/902 903/903
+s off
+g _301
+v 19 193 -1
+v 11 179 13
+v 18 182 -2
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_302
+f 904/904 905/905 906/906
+s off
+g _302
+v -11 179 13
+v -19 186 18
+v -18 193 -1
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_303
+f 907/907 908/908 909/909
+s off
+g _303
+v -11 179 13
+v -18 193 -1
+v -18 182 -2
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_304
+f 910/910 911/911 912/912
+s off
+g _304
+v -2 183 49
+v 2 183 49
+v 2 188 39
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_305
+f 913/913 914/914 915/915
+s off
+g _305
+v -2 183 49
+v 2 188 39
+v -2 188 39
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_306
+f 916/916 917/917 918/918
+s off
+g _306
+v -2 183 49
+v -2 188 39
+v 2 183 49
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_307
+f 919/919 920/920 921/921
+s off
+g _307
+v -2 183 49
+v 2 183 49
+v 4 173 53
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_308
+f 922/922 923/923 924/924
+s off
+g _308
+v -2 183 49
+v 4 173 53
+v -4 173 53
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_309
+f 925/925 926/926 927/927
+s off
+g _309
+v -2 183 49
+v -4 173 53
+v 2 183 49
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_310
+f 928/928 929/929 930/930
+s off
+g _310
+v 2 183 49
+v -4 173 53
+v 4 173 53
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_311
+f 931/931 932/932 933/933
+s off
+g _311
+v 4 173 53
+v -4 173 53
+v 0 169 53
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_312
+f 934/934 935/935 936/936
+s off
+g _312
+v 4 173 53
+v 0 169 53
+v 4 165 53
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_313
+f 937/937 938/938 939/939
+s off
+g _313
+v 4 173 53
+v 4 165 53
+v 0 169 53
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_314
+f 940/940 941/941 942/942
+s off
+g _314
+v 4 173 53
+v 0 169 53
+v -4 173 53
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_315
+f 943/943 944/944 945/945
+s off
+g _315
+v -4 173 53
+v 0 169 53
+v -4 165 53
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_316
+f 946/946 947/947 948/948
+s off
+g _316
+v -4 173 53
+v -4 165 53
+v 0 169 53
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_317
+f 949/949 950/950 951/951
+s off
+g _317
+v -2 188 39
+v 2 188 39
+v 2 183 49
+vt 0 1
+vt 1 1
+vt 0 0
+usemtl material_318
+f 952/952 953/953 954/954
+s off
