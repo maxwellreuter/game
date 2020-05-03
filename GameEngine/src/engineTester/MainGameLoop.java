@@ -83,9 +83,7 @@ public class MainGameLoop {
 		}
 		
 		Terrain terrain = new Terrain(0, -1, loader, texturePack, blendMap);
-		Terrain terrain2 = new Terrain(-1, -1, loader, texturePack, blendMap);
-
-		Camera camera = new Camera();
+		Terrain terrain2 = new Terrain(-1, -1, loader, texturePack, blendMap);	
 
 		MasterRenderer renderer = new MasterRenderer();
 		
@@ -93,6 +91,7 @@ public class MainGameLoop {
 		TexturedModel character = new TexturedModel(characterModel, new ModelTexture(loader.loadTexture("grey")));
 		
 		Player player = new Player(character, new Vector3f(0, 0, -20), 0, 180, 0, 0.027f);
+		Camera camera = new Camera(player);
 		
 		// persist display until user exit
 		while (!Display.isCloseRequested()) {
