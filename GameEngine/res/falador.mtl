@@ -1,0 +1,398 @@
+# Created by Metasequoia
+
+newmtl edge_color000255
+Ka 0.20000 0.20000 0.20000
+Kd 0.80000 0.80000 0.80000
+Ks 0.20000 0.20000 0.20000
+Ns 20.00000
+
+newmtl Stone_Sandstone_Ashlar_Light
+Ka 0.20000 0.20000 0.20000
+Kd 0.80000 0.80000 0.80000
+Ks 0.00000 0.00000 0.00000
+Ns 5.00000
+map_Kd Stone_Sandstone_Ashlar_Light.jpg
+
+newmtl Wood_Cherry_Original
+Ka 0.20000 0.20000 0.20000
+Kd 0.80000 0.80000 0.80000
+Ks 0.00000 0.00000 0.00000
+Ns 5.00000
+map_Kd Wood_Cherry_Original.jpg
+
+newmtl edge_color206178128255
+Ka 0.20000 0.20000 0.20000
+Kd 0.80000 0.80000 0.80000
+Ks 0.20000 0.20000 0.20000
+Ns 20.00000
+
+newmtl Wood_Cherry_Original_0
+Ka 0.20000 0.20000 0.20000
+Kd 0.80000 0.80000 0.80000
+Ks 0.00000 0.00000 0.00000
+Ns 5.00000
+map_Kd Wood_Cherry_Original_0.jpg
+
+newmtl fallyy
+Ka 0.20000 0.20000 0.20000
+Kd 0.80000 0.80000 0.80000
+Ks 0.00000 0.00000 0.00000
+Ns 5.00000
+map_Kd fallyy.jpg
+
+newmtl fallyy_1
+Ka 0.20000 0.20000 0.20000
+Kd 0.80000 0.80000 0.80000
+Ks 0.00000 0.00000 0.00000
+Ns 5.00000
+map_Kd fallyy_1.jpg
+
+newmtl fallyy_2
+Ka 0.20000 0.20000 0.20000
+Kd 0.80000 0.80000 0.80000
+Ks 0.00000 0.00000 0.00000
+Ns 5.00000
+map_Kd fallyy_2.jpg
+
+newmtl Cladding_Stucco_White
+Ka 0.20000 0.20000 0.20000
+Kd 0.80000 0.80000 0.80000
+Ks 0.00000 0.00000 0.00000
+Ns 5.00000
+map_Kd Cladding_Stucco_White.jpg
+
+newmtl edge_color200200200255
+Ka 0.20000 0.20000 0.20000
+Kd 0.80000 0.80000 0.80000
+Ks 0.20000 0.20000 0.20000
+Ns 20.00000
+
+newmtl edge_color255255255255
+Ka 0.20000 0.20000 0.20000
+Kd 0.80000 0.80000 0.80000
+Ks 0.20000 0.20000 0.20000
+Ns 20.00000
+
+newmtl edge_color226197133255
+Ka 0.20000 0.20000 0.20000
+Kd 0.80000 0.80000 0.80000
+Ks 0.20000 0.20000 0.20000
+Ns 20.00000
+
+newmtl Color_000
+Ka 0.20000 0.20000 0.20000
+Kd 1.00000 1.00000 1.00000
+Ks 0.00000 0.00000 0.00000
+Ns 5.00000
+
+newmtl Cladding_Stucco_White_3
+Ka 0.20000 0.20000 0.20000
+Kd 0.80000 0.80000 0.80000
+Ks 0.00000 0.00000 0.00000
+Ns 5.00000
+map_Kd Cladding_Stucco_White_3.jpg
+
+newmtl Cladding_Stucco_White_4
+Ka 0.20000 0.20000 0.20000
+Kd 0.80000 0.80000 0.80000
+Ks 0.00000 0.00000 0.00000
+Ns 5.00000
+map_Kd Cladding_Stucco_White_4.jpg
+
+newmtl Cladding_Stucco_White_5
+Ka 0.20000 0.20000 0.20000
+Kd 0.80000 0.80000 0.80000
+Ks 0.00000 0.00000 0.00000
+Ns 5.00000
+map_Kd Cladding_Stucco_White_5.jpg
+
+newmtl Cladding_Stucco_White_6
+Ka 0.20000 0.20000 0.20000
+Kd 0.80000 0.80000 0.80000
+Ks 0.00000 0.00000 0.00000
+Ns 5.00000
+map_Kd Cladding_Stucco_White_6.jpg
+
+newmtl Cladding_Stucco_White_7
+Ka 0.20000 0.20000 0.20000
+Kd 0.80000 0.80000 0.80000
+Ks 0.00000 0.00000 0.00000
+Ns 5.00000
+map_Kd Cladding_Stucco_White_7.jpg
+
+newmtl Cladding_Stucco_White_8
+Ka 0.20000 0.20000 0.20000
+Kd 0.80000 0.80000 0.80000
+Ks 0.00000 0.00000 0.00000
+Ns 5.00000
+map_Kd Cladding_Stucco_White_8.jpg
+
+newmtl Cladding_Stucco_White_9
+Ka 0.20000 0.20000 0.20000
+Kd 0.80000 0.80000 0.80000
+Ks 0.00000 0.00000 0.00000
+Ns 5.00000
+map_Kd Cladding_Stucco_White_9.jpg
+
+newmtl Cladding_Stucco_White_10
+Ka 0.20000 0.20000 0.20000
+Kd 0.80000 0.80000 0.80000
+Ks 0.00000 0.00000 0.00000
+Ns 5.00000
+map_Kd Cladding_Stucco_White_10.jpg
+
+newmtl Cladding_Stucco_White_11
+Ka 0.20000 0.20000 0.20000
+Kd 0.80000 0.80000 0.80000
+Ks 0.00000 0.00000 0.00000
+Ns 5.00000
+map_Kd Cladding_Stucco_White_11.jpg
+
+newmtl Cladding_Stucco_White_12
+Ka 0.20000 0.20000 0.20000
+Kd 0.80000 0.80000 0.80000
+Ks 0.00000 0.00000 0.00000
+Ns 5.00000
+map_Kd Cladding_Stucco_White_12.jpg
+
+newmtl Cladding_Stucco_White_13
+Ka 0.20000 0.20000 0.20000
+Kd 0.80000 0.80000 0.80000
+Ks 0.00000 0.00000 0.00000
+Ns 5.00000
+map_Kd Cladding_Stucco_White_13.jpg
+
+newmtl Cladding_Stucco_White_14
+Ka 0.20000 0.20000 0.20000
+Kd 0.80000 0.80000 0.80000
+Ks 0.00000 0.00000 0.00000
+Ns 5.00000
+map_Kd Cladding_Stucco_White_14.jpg
+
+newmtl Cladding_Stucco_White_15
+Ka 0.20000 0.20000 0.20000
+Kd 0.80000 0.80000 0.80000
+Ks 0.00000 0.00000 0.00000
+Ns 5.00000
+map_Kd Cladding_Stucco_White_15.jpg
+
+newmtl Cladding_Stucco_White_16
+Ka 0.20000 0.20000 0.20000
+Kd 0.80000 0.80000 0.80000
+Ks 0.00000 0.00000 0.00000
+Ns 5.00000
+map_Kd Cladding_Stucco_White_16.jpg
+
+newmtl Cladding_Stucco_White_17
+Ka 0.20000 0.20000 0.20000
+Kd 0.80000 0.80000 0.80000
+Ks 0.00000 0.00000 0.00000
+Ns 5.00000
+map_Kd Cladding_Stucco_White_17.jpg
+
+newmtl Cladding_Stucco_White_18
+Ka 0.20000 0.20000 0.20000
+Kd 0.80000 0.80000 0.80000
+Ks 0.00000 0.00000 0.00000
+Ns 5.00000
+map_Kd Cladding_Stucco_White_18.jpg
+
+newmtl Vegetation_Bark_Ponderosa
+Ka 0.20000 0.20000 0.20000
+Kd 0.80000 0.80000 0.80000
+Ks 0.00000 0.00000 0.00000
+Ns 5.00000
+map_Kd Vegetation_Bark_Ponderosa.jpg
+
+newmtl edge_color1458939255
+Ka 0.20000 0.20000 0.20000
+Kd 0.80000 0.80000 0.80000
+Ks 0.20000 0.20000 0.20000
+Ns 20.00000
+
+newmtl Wood_Floor_Parquet
+Ka 0.20000 0.20000 0.20000
+Kd 0.80000 0.80000 0.80000
+Ks 0.00000 0.00000 0.00000
+Ns 5.00000
+map_Kd Wood_Floor_Parquet.jpg
+
+newmtl Wood_Floor_Parquet_19
+Ka 0.20000 0.20000 0.20000
+Kd 0.80000 0.80000 0.80000
+Ks 0.00000 0.00000 0.00000
+Ns 5.00000
+map_Kd Wood_Floor_Parquet_19.jpg
+
+newmtl Wood_Floor_Parquet_20
+Ka 0.20000 0.20000 0.20000
+Kd 0.80000 0.80000 0.80000
+Ks 0.00000 0.00000 0.00000
+Ns 5.00000
+map_Kd Wood_Floor_Parquet_20.jpg
+
+newmtl Water_Sparkling
+Ka 0.20000 0.20000 0.20000
+Kd 0.80000 0.80000 0.80000
+Ks 0.00000 0.00000 0.00000
+Ns 5.00000
+map_Kd Water_Sparkling.jpg
+
+newmtl Cladding_Stucco_White_21
+Ka 0.20000 0.20000 0.20000
+Kd 0.80000 0.80000 0.80000
+Ks 0.00000 0.00000 0.00000
+Ns 5.00000
+map_Kd Cladding_Stucco_White_21.jpg
+
+newmtl Water_Sparkling_22
+Ka 0.20000 0.20000 0.20000
+Kd 0.80000 0.80000 0.80000
+Ks 0.00000 0.00000 0.00000
+Ns 5.00000
+map_Kd Water_Sparkling_22.jpg
+
+newmtl Cladding_Stucco_White_23
+Ka 0.20000 0.20000 0.20000
+Kd 0.80000 0.80000 0.80000
+Ks 0.00000 0.00000 0.00000
+Ns 5.00000
+map_Kd Cladding_Stucco_White_23.jpg
+
+newmtl Cladding_Stucco_White_24
+Ka 0.20000 0.20000 0.20000
+Kd 0.80000 0.80000 0.80000
+Ks 0.00000 0.00000 0.00000
+Ns 5.00000
+map_Kd Cladding_Stucco_White_24.jpg
+
+newmtl Cladding_Stucco_White_25
+Ka 0.20000 0.20000 0.20000
+Kd 0.80000 0.80000 0.80000
+Ks 0.00000 0.00000 0.00000
+Ns 5.00000
+map_Kd Cladding_Stucco_White_25.jpg
+
+newmtl Cladding_Stucco_White_26
+Ka 0.20000 0.20000 0.20000
+Kd 0.80000 0.80000 0.80000
+Ks 0.00000 0.00000 0.00000
+Ns 5.00000
+map_Kd Cladding_Stucco_White_26.jpg
+
+newmtl Cladding_Stucco_White_27
+Ka 0.20000 0.20000 0.20000
+Kd 0.80000 0.80000 0.80000
+Ks 0.00000 0.00000 0.00000
+Ns 5.00000
+map_Kd Cladding_Stucco_White_27.jpg
+
+newmtl Wood_Cherry_Original_28
+Ka 0.20000 0.20000 0.20000
+Kd 0.80000 0.80000 0.80000
+Ks 0.00000 0.00000 0.00000
+Ns 5.00000
+map_Kd Wood_Cherry_Original_28.jpg
+
+newmtl Cladding_Stucco_White_29
+Ka 0.20000 0.20000 0.20000
+Kd 0.80000 0.80000 0.80000
+Ks 0.00000 0.00000 0.00000
+Ns 5.00000
+map_Kd Cladding_Stucco_White_29.jpg
+
+newmtl Cladding_Stucco_White_30
+Ka 0.20000 0.20000 0.20000
+Kd 0.80000 0.80000 0.80000
+Ks 0.00000 0.00000 0.00000
+Ns 5.00000
+map_Kd Cladding_Stucco_White_30.jpg
+
+newmtl Wood_Cherry_Original_31
+Ka 0.20000 0.20000 0.20000
+Kd 0.80000 0.80000 0.80000
+Ks 0.00000 0.00000 0.00000
+Ns 5.00000
+map_Kd Wood_Cherry_Original_31.jpg
+
+newmtl edge_color1528642255
+Ka 0.20000 0.20000 0.20000
+Kd 0.80000 0.80000 0.80000
+Ks 0.20000 0.20000 0.20000
+Ns 20.00000
+
+newmtl Wood_Cherry_Original_32
+Ka 0.20000 0.20000 0.20000
+Kd 0.80000 0.80000 0.80000
+Ks 0.00000 0.00000 0.00000
+Ns 5.00000
+map_Kd Wood_Cherry_Original_32.jpg
+
+newmtl Wood_Floor_Parquet_33
+Ka 0.20000 0.20000 0.20000
+Kd 0.80000 0.80000 0.80000
+Ks 0.00000 0.00000 0.00000
+Ns 5.00000
+map_Kd Wood_Floor_Parquet_33.jpg
+
+newmtl Wood_Floor_Parquet_34
+Ka 0.20000 0.20000 0.20000
+Kd 0.80000 0.80000 0.80000
+Ks 0.00000 0.00000 0.00000
+Ns 5.00000
+map_Kd Wood_Floor_Parquet_34.jpg
+
+newmtl Color_007
+Ka 0.20000 0.20000 0.20000
+Kd 0.22745 0.22745 0.22745
+Ks 0.00000 0.00000 0.00000
+Ns 5.00000
+
+newmtl edge_color585858255
+Ka 0.20000 0.20000 0.20000
+Kd 0.80000 0.80000 0.80000
+Ks 0.20000 0.20000 0.20000
+Ns 20.00000
+
+newmtl Cladding_Stucco_White_35
+Ka 0.20000 0.20000 0.20000
+Kd 0.80000 0.80000 0.80000
+Ks 0.00000 0.00000 0.00000
+Ns 5.00000
+map_Kd Cladding_Stucco_White_35.jpg
+
+newmtl Brick_Tumbled
+Ka 0.20000 0.20000 0.20000
+Kd 0.80000 0.80000 0.80000
+Ks 0.00000 0.00000 0.00000
+Ns 5.00000
+map_Kd Brick_Tumbled.jpg
+
+newmtl Brick_Tumbled_36
+Ka 0.20000 0.20000 0.20000
+Kd 0.80000 0.80000 0.80000
+Ks 0.00000 0.00000 0.00000
+Ns 5.00000
+map_Kd Brick_Tumbled_36.jpg
+
+newmtl Brick_Tumbled_37
+Ka 0.20000 0.20000 0.20000
+Kd 0.80000 0.80000 0.80000
+Ks 0.00000 0.00000 0.00000
+Ns 5.00000
+map_Kd Brick_Tumbled_37.jpg
+
+newmtl Brick_Tumbled_38
+Ka 0.20000 0.20000 0.20000
+Kd 0.80000 0.80000 0.80000
+Ks 0.00000 0.00000 0.00000
+Ns 5.00000
+map_Kd Brick_Tumbled_38.jpg
+
+newmtl Wood_Cherry_Original_39
+Ka 0.20000 0.20000 0.20000
+Kd 0.80000 0.80000 0.80000
+Ks 0.00000 0.00000 0.00000
+Ns 5.00000
+map_Kd Wood_Cherry_Original_39.jpg
+

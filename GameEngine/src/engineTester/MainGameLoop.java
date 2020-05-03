@@ -63,8 +63,8 @@ public class MainGameLoop {
 		Light light = new Light(new Vector3f(20000, 20000, 20000), new Vector3f(1, 1, 1));
 		
 		
-		TexturedModel texturedTree = new TexturedModel(OBJLoader.loadObjModel("tree", loader),
-				new ModelTexture(loader.loadTexture("tree")));
+		TexturedModel texturedTree = new TexturedModel(OBJLoader.loadObjModel("box", loader),
+				new ModelTexture(loader.loadTexture("box")));
 		TexturedModel texturedGrass = new TexturedModel(OBJLoader.loadObjModel("grassModel", loader),
 				new ModelTexture(loader.loadTexture("grassTexture")));
 		texturedGrass.getTexture().setHasTransparency(true);
@@ -87,7 +87,7 @@ public class MainGameLoop {
 
 		MasterRenderer renderer = new MasterRenderer();
 		
-		RawModel characterModel = OBJLoader.loadObjModel("character", loader);
+		RawModel characterModel = OBJLoader.loadObjModel("test", loader);
 		TexturedModel character = new TexturedModel(characterModel, new ModelTexture(loader.loadTexture("grey")));
 		
 		Player player = new Player(character, new Vector3f(0, 0, -20), 0, 180, 0, 0.027f);
