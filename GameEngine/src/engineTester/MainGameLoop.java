@@ -28,6 +28,7 @@ import terrains.Terrain;
 import textures.ModelTexture;
 import textures.TerrainTexture;
 import textures.TerrainTexturePack;
+import toolbox.MousePicker;
 
 public class MainGameLoop {
 	
@@ -113,6 +114,7 @@ public class MainGameLoop {
 		Terrain terrain = new Terrain(0, -1, loader, texturePack, blendMap, "heightmap2");
 		
 		List<Entity> entities = new ArrayList<Entity>();
+		Entity rocks_entity = new Entity(rocks, new Vector3f(495 + 55, terrain.getHeightOfTerrain(495 + 55, -398.25f - 45f), -398.25f - 45f),0,0,0,0.049f);
 		entities.add(new Entity(bank_booth, new Vector3f(495, terrain.getHeightOfTerrain(495, -398.25f - 3.5f), -398.25f - 3.5f),0,0,0,0.00225f));
 		entities.add(new Entity(bank_booth, new Vector3f(495, terrain.getHeightOfTerrain(495, -398.25f - 3.5f), -398.25f),0,0,0,0.00225f));
 		entities.add(new Entity(bank_booth, new Vector3f(495, terrain.getHeightOfTerrain(495, -398.25f - 3.5f), -398.25f + 3.5f),0,0,0,0.00225f));
@@ -122,6 +124,7 @@ public class MainGameLoop {
 		entities.add(new Entity(cave_entrance, new Vector3f(495 - 15, terrain.getHeightOfTerrain(495 - 15, -398.25f - 55f), -398.25f - 55f),0,0,0,0.029f));
 		entities.add(new Entity(obelisk, new Vector3f(495 - 2, terrain.getHeightOfTerrain(495 - 2, -398.25f - 55f), -398.25f - 55f),0,0,0,0.029f));
 		entities.add(new Entity(ahrim, new Vector3f(495 + 24, terrain.getHeightOfTerrain(495 + 24, -398.25f - 45f), -398.25f - 45f),0,0,0,0.029f));
+		entities.add(rocks_entity);
 		
 		Random random = new Random();
 		random.setSeed(2);
@@ -153,11 +156,20 @@ public class MainGameLoop {
 		Player player = new Player(character, new Vector3f(512, -64, -400), 0, 180, 0, 0.027f);
 		Camera camera = new Camera(player);
 		
+		MousePicker picker = new MousePicker(camera, renderer.getProjectionMatrix(), terrain);
+		
 		// persist display until user exit
 		while (!Display.isCloseRequested()) {
 			//entity.increaseRotation(0, 1, 0);
 			player.move(terrain); // if using multiple terrains, test which terrain the player is on and send to this method
 			camera.move();
+			
+			picker.update();
+			Vector3f terrainPoint = picker.getCurrentTerrainPoint();
+			if(terrainPoint!=null) {
+				rocks_entity.setPosition(terrainPoint);
+			}
+			
 			renderer.processEntity(player);
 			renderer.processTerrain(terrain);
 			for(Entity entity:entities) {
