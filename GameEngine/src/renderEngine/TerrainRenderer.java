@@ -20,9 +20,14 @@ import toolbox.Maths;
 
 public class TerrainRenderer {
 	
-	private static final float RED = 135/(float)256;
-	private static final float GREEN = 206/(float)256;
-	private static final float BLUE = 235/(float)256;
+	// blue sky
+	//private static final float RED = 135/(float)256;
+	//private static final float GREEN = 206/(float)256;
+	//private static final float BLUE = 235/(float)256;
+	
+	private static final float RED = 194/(float)256;
+	private static final float GREEN = 178/(float)256;
+	private static final float BLUE = 128/(float)256;
 	
 	private TerrainShader shader;
 	

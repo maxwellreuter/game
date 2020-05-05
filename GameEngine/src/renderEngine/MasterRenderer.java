@@ -23,9 +23,14 @@ public class MasterRenderer {
 	private static final float NEAR_PLANE = 0.1f;
 	private static final float FAR_PLANE = 1000;
 	
-	private static final float RED = 135/(float)256;
-	private static final float GREEN = 206/(float)256;
-	private static final float BLUE = 235/(float)256;
+	// blue sky
+	//private static final float RED = 135/(float)256;
+	//private static final float GREEN = 206/(float)256;
+	//private static final float BLUE = 235/(float)256;
+	
+	private static final float RED = 194/(float)256;
+	private static final float GREEN = 178/(float)256;
+	private static final float BLUE = 128/(float)256;
 	
 	
 	private Matrix4f projectionMatrix;
@@ -60,7 +65,7 @@ public class MasterRenderer {
 		prepare();
 		shader.start();
 		shader.loadSkyColour(RED, GREEN, BLUE);
-		shader.loadLight(sun);;
+		shader.loadLight(sun);
 		shader.loadViewMatrix(camera);
 		renderer.render(entities);
 		shader.stop();
