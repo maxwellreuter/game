@@ -63,8 +63,8 @@ public class MainGameLoop {
 		Light light = new Light(new Vector3f(20000, 20000, 20000), new Vector3f(1, 1, 1));
 		
 		
-		TexturedModel texturedTree = new TexturedModel(OBJLoader.loadObjModel("box", loader),
-				new ModelTexture(loader.loadTexture("box")));
+		TexturedModel texturedTree = new TexturedModel(OBJLoader.loadObjModel("tree", loader),
+				new ModelTexture(loader.loadTexture("tree")));
 		TexturedModel texturedGrass = new TexturedModel(OBJLoader.loadObjModel("grassModel", loader),
 				new ModelTexture(loader.loadTexture("grassTexture")));
 		texturedGrass.getTexture().setHasTransparency(true);
@@ -74,35 +74,34 @@ public class MainGameLoop {
 		texturedFern.getTexture().setHasTransparency(true);
 		//texturedFern.getTexture().setUseFakeLighting(true);
 		
+		Terrain terrain = new Terrain(0, -1, loader, texturePack, blendMap, "heightmap");
+		
 		List<Entity> entities = new ArrayList<Entity>();
 		Random random = new Random();
 		for(int i=0;i<1000;i++){
-		   entities.add(new Entity(texturedTree, new Vector3f(random.nextFloat()*1600 - 800,0,random.nextFloat() * -800),0,0,0,3f));
-		   entities.add(new Entity(texturedGrass, new Vector3f(random.nextFloat() * 1600 -800, 0, random.nextFloat() * -800), 0, 0, 0, 1));
-		   entities.add(new Entity(texturedFern, new Vector3f(random.nextFloat() * 1600 -800, 0, random.nextFloat() * -800), 0, 0, 0, 0.6f));
+			float x = random.nextFloat()*1600 - 800;
+			float z = random.nextFloat() * -800;
+			float y = terrain.getHeightOfTerrain(x, z);
+			entities.add(new Entity(texturedTree, new Vector3f(x, y, z),0,0,0,3f));
+			entities.add(new Entity(texturedGrass, new Vector3f(x, y, z), 0, 0, 0, 1));
+			entities.add(new Entity(texturedFern, new Vector3f(x, y, z), 0, 0, 0, 0.6f));
 		}
-		
-		Terrain terrain = new Terrain(0, -1, loader, texturePack, blendMap, "heightmap");
-		Terrain terrain2 = new Terrain(-1, -1, loader, texturePack, blendMap, "heightmap");	
 
 		MasterRenderer renderer = new MasterRenderer();
 		
 		RawModel characterModel = OBJLoader.loadObjModel("test", loader);
 		TexturedModel character = new TexturedModel(characterModel, new ModelTexture(loader.loadTexture("grey")));
 		
-		Player player = new Player(character, new Vector3f(0, 0, -20), 0, 180, 0, 0.027f);
+		Player player = new Player(character, new Vector3f(512, 0, -400), 0, 180, 0, 0.027f);
 		Camera camera = new Camera(player);
 		
 		// persist display until user exit
 		while (!Display.isCloseRequested()) {
 			//entity.increaseRotation(0, 1, 0);
+			player.move(terrain); // if using multiple terrains, test which terrain the player is on and send to this method
 			camera.move();
-			player.move();
 			renderer.processEntity(player);
-			
 			renderer.processTerrain(terrain);
-			renderer.processTerrain(terrain2);
-			
 			for(Entity entity:entities) {
 			 renderer.processEntity(entity);
 			}
