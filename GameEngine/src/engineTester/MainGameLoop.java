@@ -7,12 +7,15 @@ import java.util.List;
 import java.util.Random;
 
 import org.lwjgl.opengl.Display;
+import org.lwjgl.util.vector.Vector2f;
 import org.lwjgl.util.vector.Vector3f;
 
 import entities.Camera;
 import entities.Entity;
 import entities.Light;
 import entities.Player;
+import guis.GuiRenderer;
+import guis.GuiTexture;
 import models.RawModel;
 import models.TexturedModel;
 import renderEngine.DisplayManager;
@@ -27,6 +30,8 @@ import textures.TerrainTexture;
 import textures.TerrainTexturePack;
 
 public class MainGameLoop {
+	
+	public static final float RATIO = (float) 1920/ (float) 1080;
 
 	public static void main(String[] args) {
 
@@ -49,6 +54,11 @@ public class MainGameLoop {
 
 		// RawModel model = OBJLoader.loadObjModel("runescapeCharacter", loader);
 		RawModel model = OBJLoader.loadObjModel("tree", loader);
+		
+		List<GuiTexture> guis = new ArrayList<GuiTexture>();
+		GuiTexture gui = new GuiTexture(loader.loadTexture("console"), new Vector2f(-0.733f, -0.85f), new Vector2f(RATIO * 0.15f, 0.15f));
+		guis.add(gui);
+		GuiRenderer guiRenderer = new GuiRenderer(loader);
 
 		/*
 		TexturedModel staticModel = new TexturedModel(model, new ModelTexture(loader.loadTexture("blink-182")));
@@ -156,9 +166,11 @@ public class MainGameLoop {
 			//renderer.processEntity(entity);
 			
 			renderer.render(light, camera);
+			guiRenderer.render(guis);
 			DisplayManager.updateDisplay();
 		}
 
+		guiRenderer.cleanUp();
 		renderer.cleanUp();
 		loader.cleanUp();
 		DisplayManager.closeDisplay();
