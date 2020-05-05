@@ -82,8 +82,8 @@ public class MainGameLoop {
 		   entities.add(new Entity(texturedFern, new Vector3f(random.nextFloat() * 1600 -800, 0, random.nextFloat() * -800), 0, 0, 0, 0.6f));
 		}
 		
-		Terrain terrain = new Terrain(0, -1, loader, texturePack, blendMap);
-		Terrain terrain2 = new Terrain(-1, -1, loader, texturePack, blendMap);	
+		Terrain terrain = new Terrain(0, -1, loader, texturePack, blendMap, "heightmap");
+		Terrain terrain2 = new Terrain(-1, -1, loader, texturePack, blendMap, "heightmap");	
 
 		MasterRenderer renderer = new MasterRenderer();
 		
