@@ -72,15 +72,17 @@ public class Camera {
 	}
 	
 	private void calculateZoom() {
-		float zoomLevel = Mouse.getDWheel() * 0.1f;
+		//System.out.print(Mouse.getDWheel());
+		//System.out.print("\n");
+		float zoomLevel = Mouse.getDWheel() * 0.003f;
 		float newDistance = distanceFromPlayer - zoomLevel;
-		if(newDistance >= 0 && newDistance < MAX_ZOOM_OUT) {
+		if(newDistance >= 2 && newDistance < MAX_ZOOM_OUT) {
 			distanceFromPlayer = newDistance;
 		}
 	}
 	
 	private void calculatePitch() {
-		if(Mouse.isButtonDown(1)) {
+		if(Mouse.isButtonDown(2)) {
 			float pitchChange = Mouse.getDY() * 0.1f;
 			float newPitch = pitch - pitchChange;
 			if(newPitch > 0 && newPitch <= PITCH_MAX) {
@@ -90,7 +92,7 @@ public class Camera {
 	}
 	
 	private void calculateAngleAroundPlayer() {
-		if(Mouse.isButtonDown(1)) {
+		if(Mouse.isButtonDown(2)) {
 			float angleChange = Mouse.getDX() * 0.3f;
 			angleAroundPlayer -= angleChange;
 		}
