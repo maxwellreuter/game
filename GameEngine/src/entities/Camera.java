@@ -5,6 +5,8 @@ import org.lwjgl.input.Keyboard;
 import org.lwjgl.input.Mouse;
 import org.lwjgl.util.vector.Vector3f;
 
+import toolbox.GameMouse;
+
 public class Camera {
 	
 	private final float MAX_ZOOM_OUT = 50;
@@ -82,7 +84,7 @@ public class Camera {
 	}
 	
 	private void calculatePitch() {
-		if(Mouse.isButtonDown(2)) {
+		if(GameMouse.isMiddleButtonDown()) {
 			float pitchChange = Mouse.getDY() * 0.1f;
 			float newPitch = pitch - pitchChange;
 			if(newPitch > 0 && newPitch <= PITCH_MAX) {
@@ -92,11 +94,10 @@ public class Camera {
 	}
 	
 	private void calculateAngleAroundPlayer() {
-		if(Mouse.isButtonDown(2)) {
+		if(GameMouse.isMiddleButtonDown()) {
 			float angleChange = Mouse.getDX() * 0.3f;
 			angleAroundPlayer -= angleChange;
 		}
 	}
-
 	
 }

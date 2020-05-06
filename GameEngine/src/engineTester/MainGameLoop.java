@@ -30,6 +30,7 @@ import textures.ModelTexture;
 import textures.TerrainTexture;
 import textures.TerrainTexturePack;
 import toolbox.MousePicker;
+import toolbox.GameMouse;
 
 public class MainGameLoop {
 	
@@ -159,7 +160,7 @@ public class MainGameLoop {
 		
 		MousePicker picker = new MousePicker(camera, renderer.getProjectionMatrix(), terrain);
 		
-		boolean leftButtonClickedDown = false;
+		//GameMouse gameMouse = new GameMouse();
 		// persist display until user exit
 		while (!Display.isCloseRequested()) {
 			//entity.increaseRotation(0, 1, 0);
@@ -169,13 +170,8 @@ public class MainGameLoop {
 			picker.update();
 			Vector3f terrainPoint = picker.getCurrentTerrainPoint();
 			if(terrainPoint!=null) {
-				if(Mouse.isButtonDown(0) && !leftButtonClickedDown) {
+				if(GameMouse.leftClick()) {
 					player.setPosition(terrainPoint);
-					leftButtonClickedDown = true;
-				}else if(Mouse.isButtonDown(0) && leftButtonClickedDown) {
-					//do nothing
-				}else if(!Mouse.isButtonDown(0)) {
-					leftButtonClickedDown = false;
 				}
 			}
 			
