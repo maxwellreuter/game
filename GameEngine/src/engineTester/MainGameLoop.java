@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+import org.lwjgl.input.Mouse;
 import org.lwjgl.opengl.Display;
 import org.lwjgl.util.vector.Vector2f;
 import org.lwjgl.util.vector.Vector3f;
@@ -158,6 +159,7 @@ public class MainGameLoop {
 		
 		MousePicker picker = new MousePicker(camera, renderer.getProjectionMatrix(), terrain);
 		
+		boolean leftButtonClickedDown = false;
 		// persist display until user exit
 		while (!Display.isCloseRequested()) {
 			//entity.increaseRotation(0, 1, 0);
@@ -167,7 +169,14 @@ public class MainGameLoop {
 			picker.update();
 			Vector3f terrainPoint = picker.getCurrentTerrainPoint();
 			if(terrainPoint!=null) {
-				rocks_entity.setPosition(terrainPoint);
+				if(Mouse.isButtonDown(0) && !leftButtonClickedDown) {
+					player.setPosition(terrainPoint);
+					leftButtonClickedDown = true;
+				}else if(Mouse.isButtonDown(0) && leftButtonClickedDown) {
+					//do nothing
+				}else if(!Mouse.isButtonDown(0)) {
+					leftButtonClickedDown = false;
+				}
 			}
 			
 			renderer.processEntity(player);
