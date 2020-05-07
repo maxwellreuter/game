@@ -24,13 +24,13 @@ public class MasterRenderer {
 	private static final float FAR_PLANE = 1000;
 	
 	// blue sky
-	//private static final float RED = 135/(float)256;
-	//private static final float GREEN = 206/(float)256;
-	//private static final float BLUE = 235/(float)256;
+	private static float SKY_RED = 135/(float)256;
+	private static float SKY_GREEN = 206/(float)256;
+	private static float SKY_BLUE = 11/(float)256;
 	
-	private static final float RED = 194/(float)256;
-	private static final float GREEN = 178/(float)256;
-	private static final float BLUE = 128/(float)256;
+	//private static final float RED = 194/(float)256;
+	//private static final float GREEN = 178/(float)256;
+	//private static final float BLUE = 128/(float)256;
 	
 	
 	private Matrix4f projectionMatrix;
@@ -52,6 +52,16 @@ public class MasterRenderer {
 		terrainRenderer = new TerrainRenderer(terrainShader,projectionMatrix);
 	}
 	
+	public void setSkyColor(float r, float g, float b) {
+		SKY_RED = r;
+		SKY_GREEN = g;
+		SKY_BLUE = b;
+	}
+	
+	public void setFogColor(float r, float g, float b) {
+		terrainRenderer.setFogColor(r, g, b);
+	}
+	
 	public Matrix4f getProjectionMatrix() {
 		return projectionMatrix;
 	}
@@ -68,7 +78,7 @@ public class MasterRenderer {
 	public void render(Light sun, Camera camera) {
 		prepare();
 		shader.start();
-		shader.loadSkyColour(RED, GREEN, BLUE);
+		shader.loadSkyColour(SKY_RED, SKY_GREEN, SKY_BLUE);
 		shader.loadLight(sun);
 		shader.loadViewMatrix(camera);
 		renderer.render(entities);
@@ -106,7 +116,7 @@ public class MasterRenderer {
 	public void prepare() {
 		GL11.glEnable(GL11.GL_DEPTH_TEST);
 		GL11.glClear(GL11.GL_COLOR_BUFFER_BIT|GL11.GL_DEPTH_BUFFER_BIT);
-		GL11.glClearColor(RED, GREEN, BLUE, 1);
+		GL11.glClearColor(SKY_RED, SKY_GREEN, SKY_BLUE, 1);
 	}
 	
 	

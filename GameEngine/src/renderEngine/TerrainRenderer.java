@@ -21,13 +21,13 @@ import toolbox.Maths;
 public class TerrainRenderer {
 	
 	// blue sky
-	//private static final float RED = 135/(float)256;
-	//private static final float GREEN = 206/(float)256;
-	//private static final float BLUE = 235/(float)256;
+	private static float RED = 135/(float)256;
+	private static float GREEN = 206/(float)256;
+	private static float BLUE = 11/(float)256;
 	
-	private static final float RED = 194/(float)256;
-	private static final float GREEN = 178/(float)256;
-	private static final float BLUE = 128/(float)256;
+	//private static float RED = 194/(float)256;
+	//private static float GREEN = 178/(float)256;
+	//private static float BLUE = 128/(float)256;
 	
 	private TerrainShader shader;
 	
@@ -48,6 +48,12 @@ public class TerrainRenderer {
 			
 			unbindTexturedModel();
 		}
+	}
+	
+	public void setFogColor(float r, float g, float b) {
+		RED = r;
+		GREEN = g;
+		BLUE = b;
 	}
 	
 	private void prepareTerrain(Terrain terrain) {
