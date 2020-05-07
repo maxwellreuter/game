@@ -171,7 +171,7 @@ public class MainGameLoop {
 			Vector3f terrainPoint = picker.getCurrentTerrainPoint();
 			if(terrainPoint!=null) {
 				if(GameMouse.leftClick()) {
-					player.setPosition(terrainPoint);
+					player.setTarget(terrainPoint);
 				}
 			}
 			

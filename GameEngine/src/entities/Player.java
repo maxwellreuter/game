@@ -6,6 +6,7 @@ import org.lwjgl.util.vector.Vector3f;
 import models.TexturedModel;
 import renderEngine.DisplayManager;
 import terrains.Terrain;
+import java.lang.Math;
 
 public class Player extends Entity {
 	
@@ -19,6 +20,11 @@ public class Player extends Entity {
 	private float currentSpeed = 0;
 	private float currentTurnSpeed = 0;
 	private float upwardsSpeed = 0;
+	private boolean hasTarget = false;
+	
+	private float dx1;
+	private float dy1;
+	private float dz1;
 	
 	private boolean isInAir = false;
 
@@ -40,6 +46,44 @@ public class Player extends Entity {
 			upwardsSpeed = 0;
 			isInAir = false;
 			super.getPosition().y = terrainHeight;
+		}
+		
+		if(super.getTargetPosition() != null) {
+			Vector3f targetPosition = super.getTargetPosition();
+			Vector3f currentPosition = super.getPosition();
+			
+			float dx2 = (float) targetPosition.x - currentPosition.x;
+			float dy2 = (float) targetPosition.y - currentPosition.y;
+			float dz2 = (float) targetPosition.z - currentPosition.z;
+
+			dx1 = (float) targetPosition.x - currentPosition.x;
+			dy1 = (float) targetPosition.y - currentPosition.y;
+			dz1 = (float) targetPosition.z - currentPosition.z;
+			
+			float sum = (float) Math.sqrt((Math.pow(Math.abs(dx1), 2) + Math.pow(Math.abs(dy1), 2) + Math.pow(Math.abs(dz1), 2)));
+			
+			dx1 = dx1 / sum;
+			dy1 = dy1 / sum;
+			dz1 = dz1 / sum;
+			
+			hasTarget = true;
+			
+			if(Math.abs(dx2) < 1 && Math.abs(dy2) < 1 && Math.abs(dz2) < 1) {
+				hasTarget = false;
+				super.clearTarget();
+			}
+			
+			float speed = 0.36f;
+			
+			super.increasePosition(
+					dx1 * speed,
+					dy1 * speed,
+					dz1 * speed
+			);
+			
+			//System.out.print(newSum);
+			//System.out.print("\n");
+			//Implement smooth player movement for mouse picking
 		}
 	}
 	

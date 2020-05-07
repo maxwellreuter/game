@@ -8,6 +8,8 @@ public class Entity {
 	
 	private TexturedModel model;
 	private Vector3f position;
+	private Vector3f targetPosition;
+	private Entity targetEntity;
 	private float rotX,rotY,rotZ;
 	private float scale;
 	
@@ -79,6 +81,28 @@ public class Entity {
 
 	public void setScale(float scale) {
 		this.scale = scale;
+	}
+	
+	public void setTarget(Vector3f position) {
+		this.targetPosition = position;
+		//System.out.print("set target");
+	}
+	
+	public void setTarget(Entity entity) {
+		this.targetEntity = entity;
+	}
+	
+	public Vector3f getTargetPosition() {
+		return targetPosition;
+	}
+	
+	private void moveTowardsTarget() {
+		setPosition(position);
+	}
+
+	public void clearTarget() {
+		this.targetPosition = null;
+		this.targetEntity = null;
 	}
 	
 	
