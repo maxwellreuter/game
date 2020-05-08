@@ -36,6 +36,10 @@ public class Scene {
 			createDesertScene();
 		}else if(scene == "snowy") {
 			createSnowyScene();
+		}else if(scene == "swamp") {
+			createSwampScene();
+		}else if(scene == "night") {
+			createNightScene();
 		}
 	}
 	
@@ -133,6 +137,68 @@ public class Scene {
 		
 		int dynamicSeed = 4;
 		int dynamicOccurances = 65;
+		
+		createScene(
+				terrainTextures,
+				blendMapFilename, heightMapFilename,
+				fog,
+				dynamicEntityDefinitions,
+				dynamicSeed, dynamicOccurances
+		);
+		
+	}
+
+	private void createSwampScene() {
+		
+		List<String> terrainTextures = new ArrayList<String>();
+		terrainTextures.add("swampy"); // background texture
+		terrainTextures.add("swampy"); // r texture
+		terrainTextures.add("swampy"); // g texture
+		terrainTextures.add("swampy"); // b texture
+		
+		String blendMapFilename = "blendMap";
+		String heightMapFilename = "heightmap2";
+		
+		Vector3f fog = new Vector3f(35/(float)256, 60/(float)256, 35/(float)256); // r, g, b
+		
+		List<Triplet<String, String, Float>> dynamicEntityDefinitions = new ArrayList<Triplet<String, String, Float>>();
+		dynamicEntityDefinitions.add(new Triplet<String, String, Float>("grass_and_rocks", "swampy2", 0.1f));
+		dynamicEntityDefinitions.add(new Triplet<String, String, Float>("mushroom", "brown", 0.035f));
+		dynamicEntityDefinitions.add(new Triplet<String, String, Float>("hallow_tree", "dark_brown", 0.027f));
+		
+		int dynamicSeed = 1;
+		int dynamicOccurances = 500;
+		
+		createScene(
+				terrainTextures,
+				blendMapFilename, heightMapFilename,
+				fog,
+				dynamicEntityDefinitions,
+				dynamicSeed, dynamicOccurances
+		);
+		
+	}
+	
+	private void createNightScene() {
+		
+		List<String> terrainTextures = new ArrayList<String>();
+		terrainTextures.add("grass_night"); // background texture
+		terrainTextures.add("grass_night"); // r texture
+		terrainTextures.add("grass_night"); // g texture
+		terrainTextures.add("grass_night"); // b texture
+		
+		String blendMapFilename = "blendMap";
+		String heightMapFilename = "heightmap2";
+		
+		Vector3f fog = new Vector3f(6/(float)256, 6/(float)256, 6/(float)256); // r, g, b
+		
+		List<Triplet<String, String, Float>> dynamicEntityDefinitions = new ArrayList<Triplet<String, String, Float>>();
+		dynamicEntityDefinitions.add(new Triplet<String, String, Float>("grass_and_rocks", "swampy2", 0.1f));
+		dynamicEntityDefinitions.add(new Triplet<String, String, Float>("dead_tree", "dark_brown", 0.035f));
+		dynamicEntityDefinitions.add(new Triplet<String, String, Float>("leafless_tree", "dark_brown", 0.027f));
+		
+		int dynamicSeed = 7;
+		int dynamicOccurances = 500;
 		
 		createScene(
 				terrainTextures,

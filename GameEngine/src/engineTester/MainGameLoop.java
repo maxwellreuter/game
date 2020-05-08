@@ -28,7 +28,7 @@ import toolbox.GameMouse;
 public class MainGameLoop {
 	
 	public static final float ASPECT_RATIO = (float) 1920 / (float) 1080;
-	public static String SCENE = "snowy"; // options: grassy, desert, snowy
+	public static String SCENE = "night"; // options: grassy, desert, snowy, swamp, night
 
 	public static void main(String[] args) {
 		
