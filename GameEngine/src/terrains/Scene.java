@@ -1,9 +1,7 @@
 package terrains;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import java.util.Random;
 
 import org.lwjgl.util.vector.Vector3f;
@@ -20,11 +18,10 @@ import textures.TerrainTexturePack;
 
 public class Scene {
 	
-	Vector3f DESERT_FOG = new Vector3f(94/(float)256, 178/(float)256, 128/(float)256); 	// r, g, b
-	private Vector3f fog;
 	private MasterRenderer renderer;
 	private List<Entity> entities;
 	private Terrain terrain;
+	private Vector3f fog;
 	private Light light;
 	
 	public Scene(String scene) {
@@ -33,19 +30,21 @@ public class Scene {
 			createGrassyScene();
 		}else if(scene == "desert") {
 			createDesertScene();
+		}else if(scene == "snowy") {
+			createSnowyScene();
 		}
-	}
-	
-	public Vector3f getSkyColor() {
-		return fog;
-	}
-	
-	public Vector3f getFogColor() {
-		return fog;
 	}
 	
 	public Light getLight() {
 		return this.light;
+	}
+	
+	public List<Entity> getEntities() {
+		return this.entities;
+	}
+
+	public Terrain getTerrain() {
+		return this.terrain;
 	}
 	
 	private void createGrassyScene() {
@@ -151,15 +150,199 @@ public class Scene {
 	}
 	
 	private void createDesertScene() {
-		// TODO
+		this.fog = new Vector3f(194/(float)256, 178/(float)256, 128/(float)256); // r, g, b
+		float cactus1Scale = 0.027f;
+		float cactus2Scale = 0.015f;
+		float cactus3Scale = 0.01f;
+		
+		Loader loader = new Loader();
+		TerrainTexture backgroundTexture = new TerrainTexture(loader.loadTexture("sand"));
+		TerrainTexture rTexture = new TerrainTexture(loader.loadTexture("sand"));
+		TerrainTexture gTexture = new TerrainTexture(loader.loadTexture("sand"));
+		TerrainTexture bTexture = new TerrainTexture(loader.loadTexture("sand"));
+		
+		TexturedModel tree = new TexturedModel(
+				OBJLoader.loadObjModel("cactus", loader),
+				new ModelTexture(loader.loadTexture("tree")));
+		
+		TexturedModel grass = new TexturedModel(
+				OBJLoader.loadObjModel("cactus2", loader),
+				new ModelTexture(loader.loadTexture("tree")));
+		
+		TexturedModel fern = new TexturedModel(
+				OBJLoader.loadObjModel("cactus3", loader),
+				new ModelTexture(loader.loadTexture("tree")));
+		
+		TerrainTexturePack texturePack = new TerrainTexturePack(backgroundTexture, rTexture,
+				gTexture, bTexture);
+		TerrainTexture blendMap = new TerrainTexture(loader.loadTexture("blendMap"));
+		
+		Light light = new Light(new Vector3f(0, 90000, 0), new Vector3f(1, 1, 1));
+	
+		
+		TexturedModel bank_booth = new TexturedModel(OBJLoader.loadObjModel("bank_booth", loader),
+				new ModelTexture(loader.loadTexture("box")));
+		
+		TexturedModel zaros_altar3 = new TexturedModel(OBJLoader.loadObjModel("zaros_altar3", loader),
+				new ModelTexture(loader.loadTexture("dark_grey")));
+		
+		TexturedModel rocks = new TexturedModel(OBJLoader.loadObjModel("rocks", loader),
+				new ModelTexture(loader.loadTexture("dark_grey")));
+		
+		TexturedModel dummy = new TexturedModel(OBJLoader.loadObjModel("dummy", loader),
+				new ModelTexture(loader.loadTexture("dark_grey")));
+		
+		TexturedModel cave_entrance = new TexturedModel(OBJLoader.loadObjModel("cave_entrance", loader),
+				new ModelTexture(loader.loadTexture("dark_grey")));
+		
+		TexturedModel obelisk = new TexturedModel(OBJLoader.loadObjModel("obelisk", loader),
+				new ModelTexture(loader.loadTexture("dark_grey")));
+		
+		TexturedModel ahrim = new TexturedModel(OBJLoader.loadObjModel("ahrim", loader),
+				new ModelTexture(loader.loadTexture("dark_grey")));
+		
+		Terrain terrain = new Terrain(0, -1, loader, texturePack, blendMap, "heightmap2");
+		
+		List<Entity> entities = new ArrayList<Entity>();
+		//List<Entity> entities = new ArrayList<Entity>();
+		
+		Entity rocks_entity = new Entity(rocks, new Vector3f(495 + 55, terrain.getHeightOfTerrain(495 + 55, -398.25f - 45f), -398.25f - 45f),0,0,0,0.035f);
+		entities.add(new Entity(bank_booth, new Vector3f(495, terrain.getHeightOfTerrain(495, -398.25f - 3.5f), -398.25f - 3.5f),0,0,0,0.00225f));
+		entities.add(new Entity(bank_booth, new Vector3f(495, terrain.getHeightOfTerrain(495, -398.25f - 3.5f), -398.25f),0,0,0,0.00225f));
+		entities.add(new Entity(bank_booth, new Vector3f(495, terrain.getHeightOfTerrain(495, -398.25f - 3.5f), -398.25f + 3.5f),0,0,0,0.00225f));
+		entities.add(new Entity(zaros_altar3, new Vector3f(495 + 17, terrain.getHeightOfTerrain(495 + 17, -398.25f - 45f), -398.25f - 45f),0,0,0,0.029f));
+		entities.add(new Entity(rocks, new Vector3f(495 + 55, terrain.getHeightOfTerrain(495 + 55, -398.25f - 45f), -398.25f - 45f),0,0,0,0.029f));
+		entities.add(new Entity(dummy, new Vector3f(495 + 35, terrain.getHeightOfTerrain(495 + 35, -398.25f - 15f), -398.25f - 15f),0,0,0,0.029f));
+		entities.add(new Entity(cave_entrance, new Vector3f(495 - 15, terrain.getHeightOfTerrain(495 - 15, -398.25f - 55f), -398.25f - 55f),0,0,0,0.029f));
+		entities.add(new Entity(obelisk, new Vector3f(495 - 2, terrain.getHeightOfTerrain(495 - 2, -398.25f - 55f), -398.25f - 55f),0,0,0,0.029f));
+		entities.add(new Entity(ahrim, new Vector3f(495 + 24, terrain.getHeightOfTerrain(495 + 24, -398.25f - 45f), -398.25f - 45f),0,0,0,0.029f));
+		entities.add(rocks_entity);
+		
+		Random random = new Random();
+		random.setSeed(2);
+		int occurances = 65;
+		for(int i=0;i<occurances;i++){
+			float x = random.nextFloat()*1600 - 800;
+			float z = random.nextFloat() * -800;
+			float y = terrain.getHeightOfTerrain(x, z);
+			entities.add(new Entity(tree, new Vector3f(x, y, z),0,0,0, cactus1Scale));
+		}
+		for(int i=0;i<occurances;i++){
+			float x = random.nextFloat()*1600 - 800;
+			float z = random.nextFloat() * -800;
+			float y = terrain.getHeightOfTerrain(x, z);
+			entities.add(new Entity(grass, new Vector3f(x, y, z), 0, 0, 0, cactus2Scale));
+		}
+		for(int i=0;i<occurances;i++){
+			float x = random.nextFloat()*1600 - 800;
+			float z = random.nextFloat() * -800;
+			float y = terrain.getHeightOfTerrain(x, z);
+			entities.add(new Entity(fern, new Vector3f(x, y, z), 0, 0, 0, cactus3Scale));
+		}
+		
+		this.entities = entities;
+		renderer.setSkyColor(fog.x, fog.y, fog.z);
+		renderer.setFogColor(fog.x, fog.y, fog.z);
+		this.light = light;
+		this.terrain = terrain;
 	}
 
-	public List<Entity> getEntities() {
-		return this.entities;
+	private void createSnowyScene() {
+		this.fog = new Vector3f(255/(float)256, 250/(float)256, 250/(float)256); // r, g, b
+		float cactus1Scale = 0.047f;
+		float cactus2Scale = 0.035f;
+		float cactus3Scale = 0.06f;
+		
+		Loader loader = new Loader();
+		TerrainTexture backgroundTexture = new TerrainTexture(loader.loadTexture("snowy"));
+		TerrainTexture rTexture = new TerrainTexture(loader.loadTexture("snowy"));
+		TerrainTexture gTexture = new TerrainTexture(loader.loadTexture("snowy"));
+		TerrainTexture bTexture = new TerrainTexture(loader.loadTexture("snowy"));
+		
+		TexturedModel tree = new TexturedModel(
+				OBJLoader.loadObjModel("small_rocks", loader),
+				new ModelTexture(loader.loadTexture("light_blue")));
+		
+		TexturedModel grass = new TexturedModel(
+				OBJLoader.loadObjModel("ground_spike", loader),
+				new ModelTexture(loader.loadTexture("light_blue")));
+		
+		TexturedModel fern = new TexturedModel(
+				OBJLoader.loadObjModel("big_rocks", loader),
+				new ModelTexture(loader.loadTexture("dark_grey")));
+		
+		TerrainTexturePack texturePack = new TerrainTexturePack(backgroundTexture, rTexture,
+				gTexture, bTexture);
+		TerrainTexture blendMap = new TerrainTexture(loader.loadTexture("blendMap"));
+		
+		Light light = new Light(new Vector3f(0, 90000, 0), new Vector3f(1, 1, 1));
+	
+		
+		TexturedModel bank_booth = new TexturedModel(OBJLoader.loadObjModel("bank_booth", loader),
+				new ModelTexture(loader.loadTexture("box")));
+		
+		TexturedModel zaros_altar3 = new TexturedModel(OBJLoader.loadObjModel("zaros_altar3", loader),
+				new ModelTexture(loader.loadTexture("dark_grey")));
+		
+		TexturedModel rocks = new TexturedModel(OBJLoader.loadObjModel("rocks", loader),
+				new ModelTexture(loader.loadTexture("dark_grey")));
+		
+		TexturedModel dummy = new TexturedModel(OBJLoader.loadObjModel("dummy", loader),
+				new ModelTexture(loader.loadTexture("dark_grey")));
+		
+		TexturedModel cave_entrance = new TexturedModel(OBJLoader.loadObjModel("cave_entrance", loader),
+				new ModelTexture(loader.loadTexture("dark_grey")));
+		
+		TexturedModel obelisk = new TexturedModel(OBJLoader.loadObjModel("obelisk", loader),
+				new ModelTexture(loader.loadTexture("dark_grey")));
+		
+		TexturedModel ahrim = new TexturedModel(OBJLoader.loadObjModel("ahrim", loader),
+				new ModelTexture(loader.loadTexture("dark_grey")));
+		
+		Terrain terrain = new Terrain(0, -1, loader, texturePack, blendMap, "heightmap2");
+		
+		List<Entity> entities = new ArrayList<Entity>();
+		//List<Entity> entities = new ArrayList<Entity>();
+		
+		Entity rocks_entity = new Entity(rocks, new Vector3f(495 + 55, terrain.getHeightOfTerrain(495 + 55, -398.25f - 45f), -398.25f - 45f),0,0,0,0.035f);
+		entities.add(new Entity(bank_booth, new Vector3f(495, terrain.getHeightOfTerrain(495, -398.25f - 3.5f), -398.25f - 3.5f),0,0,0,0.00225f));
+		entities.add(new Entity(bank_booth, new Vector3f(495, terrain.getHeightOfTerrain(495, -398.25f - 3.5f), -398.25f),0,0,0,0.00225f));
+		entities.add(new Entity(bank_booth, new Vector3f(495, terrain.getHeightOfTerrain(495, -398.25f - 3.5f), -398.25f + 3.5f),0,0,0,0.00225f));
+		entities.add(new Entity(zaros_altar3, new Vector3f(495 + 17, terrain.getHeightOfTerrain(495 + 17, -398.25f - 45f), -398.25f - 45f),0,0,0,0.029f));
+		entities.add(new Entity(rocks, new Vector3f(495 + 55, terrain.getHeightOfTerrain(495 + 55, -398.25f - 45f), -398.25f - 45f),0,0,0,0.029f));
+		entities.add(new Entity(dummy, new Vector3f(495 + 35, terrain.getHeightOfTerrain(495 + 35, -398.25f - 15f), -398.25f - 15f),0,0,0,0.029f));
+		entities.add(new Entity(cave_entrance, new Vector3f(495 - 15, terrain.getHeightOfTerrain(495 - 15, -398.25f - 55f), -398.25f - 55f),0,0,0,0.029f));
+		entities.add(new Entity(obelisk, new Vector3f(495 - 2, terrain.getHeightOfTerrain(495 - 2, -398.25f - 55f), -398.25f - 55f),0,0,0,0.029f));
+		entities.add(new Entity(ahrim, new Vector3f(495 + 24, terrain.getHeightOfTerrain(495 + 24, -398.25f - 45f), -398.25f - 45f),0,0,0,0.029f));
+		entities.add(rocks_entity);
+		
+		Random random = new Random();
+		random.setSeed(4);
+		int occurances = 65;
+		for(int i=0;i<occurances;i++){
+			float x = random.nextFloat()*1600 - 800;
+			float z = random.nextFloat() * -800;
+			float y = terrain.getHeightOfTerrain(x, z);
+			entities.add(new Entity(tree, new Vector3f(x, y, z),0,0,0, cactus1Scale));
+		}
+		for(int i=0;i<occurances;i++){
+			float x = random.nextFloat()*1600 - 800;
+			float z = random.nextFloat() * -800;
+			float y = terrain.getHeightOfTerrain(x, z);
+			entities.add(new Entity(grass, new Vector3f(x, y, z), 0, 0, 0, cactus2Scale));
+		}
+		for(int i=0;i<occurances;i++){
+			float x = random.nextFloat()*1600 - 800;
+			float z = random.nextFloat() * -800;
+			float y = terrain.getHeightOfTerrain(x, z);
+			entities.add(new Entity(fern, new Vector3f(x, y, z), 0, 0, 0, cactus3Scale));
+		}
+		
+		this.entities = entities;
+		renderer.setSkyColor(fog.x, fog.y, fog.z);
+		renderer.setFogColor(fog.x, fog.y, fog.z);
+		this.light = light;
+		this.terrain = terrain;
 	}
-
-	public Terrain getTerrain() {
-		return this.terrain;
-	}
-
+	
 }

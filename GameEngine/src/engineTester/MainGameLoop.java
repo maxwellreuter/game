@@ -27,13 +27,15 @@ import toolbox.GameMouse;
 
 public class MainGameLoop {
 	
-	public static final float ASPECT_RATIO = (float) 1920/ (float) 1080;
-	public static String SCENE = "grassy"; // options: grassy, desert
+	public static final float ASPECT_RATIO = (float) 1920 / (float) 1080;
+	public static String SCENE_CODE = "grassy"; // options: grassy, desert, snowy
 
 	public static void main(String[] args) {
+		
+		// startup
 		DisplayManager.createDisplay();
 		Loader loader = new Loader();
-		Scene scene = new Scene(SCENE);
+		Scene scene = new Scene(SCENE_CODE);
 		MasterRenderer renderer = new MasterRenderer();
 		
 		// player, camera
@@ -51,6 +53,7 @@ public class MainGameLoop {
 		
 		// persist display until user exit
 		while (!Display.isCloseRequested()) {
+			// update player and camera
 			player.move(scene.getTerrain()); // if using multiple terrains, test which terrain the player is on and send to this method
 			camera.move();
 			
