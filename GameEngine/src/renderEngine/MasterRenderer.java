@@ -12,6 +12,7 @@ import org.lwjgl.util.vector.Matrix4f;
 import models.TexturedModel;
 import shaders.StaticShader;
 import shaders.TerrainShader;
+import terrains.Scene;
 import terrains.Terrain;
 import entities.Camera;
 import entities.Entity;
@@ -26,7 +27,7 @@ public class MasterRenderer {
 	// blue sky
 	private static float SKY_RED = 135/(float)256;
 	private static float SKY_GREEN = 206/(float)256;
-	private static float SKY_BLUE = 11/(float)256;
+	private static float SKY_BLUE = 228/(float)256;
 	
 	//private static final float RED = 194/(float)256;
 	//private static final float GREEN = 178/(float)256;
@@ -43,6 +44,8 @@ public class MasterRenderer {
 	
 	
 	private Map<TexturedModel,List<Entity>> entities = new HashMap<TexturedModel,List<Entity>>();
+	//private List<Entity> entities = new ArrayList<Entity>();
+	
 	private List<Terrain> terrains = new ArrayList<Terrain>();
 	
 	public MasterRenderer() {
@@ -50,6 +53,7 @@ public class MasterRenderer {
 		createProjectionMatrix();
 		renderer = new EntityRenderer(shader,projectionMatrix);
 		terrainRenderer = new TerrainRenderer(terrainShader,projectionMatrix);
+		//this.entities = scene.getEntities();
 	}
 	
 	public void setSkyColor(float r, float g, float b) {
@@ -75,16 +79,16 @@ public class MasterRenderer {
 		GL11.glDisable(GL11.GL_CULL_FACE);
 	}
 	
-	public void render(Light sun, Camera camera) {
+	public void render(Camera camera, Scene scene) {
 		prepare();
 		shader.start();
 		shader.loadSkyColour(SKY_RED, SKY_GREEN, SKY_BLUE);
-		shader.loadLight(sun);
+		shader.loadLight(scene.getLight());
 		shader.loadViewMatrix(camera);
 		renderer.render(entities);
 		shader.stop();
 		terrainShader.start();
-		terrainShader.loadLight(sun);
+		terrainShader.loadLight(scene.getLight());
 		terrainShader.loadViewMatrix(camera);
 		terrainRenderer.render(terrains);
 		terrainShader.stop();
@@ -134,5 +138,9 @@ public class MasterRenderer {
         projectionMatrix.m32 = -((2 * NEAR_PLANE * FAR_PLANE) / frustum_length);
         projectionMatrix.m33 = 0;
     }
+
+	public void processScene(Camera camera) {
+		
+	}
 
 }
