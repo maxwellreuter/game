@@ -34,7 +34,6 @@ public class Player extends Entity {
 	
 	public void move(Terrain terrain) {
 		checkInputs();
-		super.increaseRotation(0, currentTurnSpeed * DisplayManager.getFrameTimeSeconds(), 0);
 		float distance = currentSpeed * DisplayManager.getFrameTimeSeconds();
 		float dx = (float) (distance * Math.sin(Math.toRadians(super.getRotY())));
 		float dz = (float) (distance * Math.cos(Math.toRadians(super.getRotY())));
@@ -81,10 +80,35 @@ public class Player extends Entity {
 					dz1 * speed
 			);
 			
+			rotateTowardsTarget();
+			
 			//System.out.print(newSum);
 			//System.out.print("\n");
 			//Implement smooth player movement for mouse picking
 		}
+	}
+	
+	private void rotateTowardsTarget() {
+		
+		float multiplier = 1f;
+		if((dx1 < 0 && dz1 > 0) || (dx1 > 0 && dz1 < 0)) {
+			multiplier = -1f;
+		}
+		
+		// calculate the angle based on the player's current position and the target's position
+		
+		float thing = 0f;
+		if(dz1 < 0) {
+			thing = 180f;
+		}
+		
+		// don't divide by zero
+		if(dx1 == 0) {
+			dx1 = 0.0001f;
+		}
+		
+		
+		super.setRotation(0, (multiplier * 90f + (float) (-Math.atan((dz1 / dx1)) * 45)) + thing, 0); // currentTurnSpeed * DisplayManager.getFrameTimeSeconds()
 	}
 	
 	private void jump() {

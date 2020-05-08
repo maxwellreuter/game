@@ -28,7 +28,7 @@ import toolbox.GameMouse;
 public class MainGameLoop {
 	
 	public static final float ASPECT_RATIO = (float) 1920 / (float) 1080;
-	public static String SCENE = "night"; // options: grassy, desert, snowy, swamp, night
+	public static String SCENE = "desert"; // options: grassy, desert, snowy, swamp, night
 
 	public static void main(String[] args) {
 		
@@ -61,7 +61,7 @@ public class MainGameLoop {
 			picker.update();
 			Vector3f terrainPoint = picker.getCurrentTerrainPoint();
 			if(terrainPoint!=null) {
-				if(GameMouse.leftClick()) {
+				if(GameMouse.leftClick() || GameMouse.isLeftButtonDown()) {
 					player.setTarget(terrainPoint);
 				}
 			}

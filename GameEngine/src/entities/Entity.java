@@ -34,6 +34,12 @@ public class Entity {
 		this.rotY+=dy;
 		this.rotZ+=dz;  
 	}
+	
+	public void setRotation(float x, float y, float z) {
+		this.rotX = x;
+		this.rotY = y;
+		this.rotZ = z;
+	}
 
 	public TexturedModel getModel() {
 		return model;
